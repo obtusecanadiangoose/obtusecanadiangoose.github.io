@@ -1,0 +1,28 @@
+I"{<p>These are some headers:</p>
+
+<h1 id="h1">H1</h1>
+<h2 id="h2">H2</h2>
+<h3 id="h3">H3</h3>
+<h4 id="h4">H4</h4>
+<h5 id="h5">H5</h5>
+<h6 id="h6">H6</h6>
+
+<p><strong>This text is bold</strong></p>
+
+<p><em>This text is italic</em></p>
+
+<p><strong><em>How about some bold italic</em></strong></p>
+
+<p>This is a link to <a href="https://google.ca">Google</a> that I can link down below</p>
+
+<p><img src="http://4.bp.blogspot.com/-W-Q7_l1OoxY/UWAJSrtvn_I/AAAAAAAASVM/eMqye-hpAu4/s1600/world-s-cutest-kitten.jpg" alt="This" /> is the #1 result for “cute cat” on google images</p>
+
+<p><code class="language-plaintext highlighter-rouge">This is in a code snippet</code></p>
+
+<p>This is a larger block of python code:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"Hi, "</span><span class="o">+</span><span class="n">name</span><span class="p">)</span>
+<span class="n">print_hi</span></code></pre></figure>
+
+:ET

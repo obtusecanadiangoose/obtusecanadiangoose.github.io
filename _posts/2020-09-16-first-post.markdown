@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Learning the Ropes"
 date:   2020-09-16 20:21:33 -0400
 categories: general
