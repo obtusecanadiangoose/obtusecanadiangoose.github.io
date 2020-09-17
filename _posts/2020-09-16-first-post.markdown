@@ -14,8 +14,11 @@ These are some headers:
 ###### H6
 
 **This text is bold**
+
 *This text is italic*
+
 ***How about some bold italic***
+
 This is a link to [Google][google] that I can link down below
 
 ![This][cat] is the #1 result for "cute cat" on google images
@@ -25,7 +28,7 @@ This is a link to [Google][google] that I can link down below
 This is a larger block of python code:
 
 {% highlight python %}
-def print_hi(name)
+def print_hi(name):
   print("Hi, "+name)
 print_hi
 {% endhighlight %}
