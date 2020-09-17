@@ -1,25 +1,8 @@
 ---
-# Front matter comment to ensure Jekyll properly reads file.
+# Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-/*
-  Site variables
-*/
+@charset "utf-8";
 
-$base-font-family: 'Roboto', sans-serif;
-
-$body-font-family: 'Roboto', sans-serif;
-
-$code-font-family: "Source Code Pro", monospace;
-
-$brand-color: black;
-
-$container-width: 1100px;
-
-$tablet-width: 600px;
-
-$phone-width: 480px;
-
-$header-thickness: 56px;
-
-@import "_sass/-sections-dir";
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
