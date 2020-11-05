@@ -13,7 +13,7 @@ locale                   : "en-US"
 title                    : "The Obtuse Canadian Goose"
 title_separator          : "-"
 subtitle                 : #"Development Test Site"
-name                     : "Liam Ogilviee"
+name                     : "Liam Ogilvie"
 description              : #"Minimal Mistakes theme test."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : #"/test"
@@ -84,7 +84,7 @@ analytics:
 author:
   name             : "Liam Ogilvie"
   avatar           : #"/assets/images/bio-photo.jpg"
-  bio              : "2nd year student at the University of Toronto studying Economics and Computer Science"
+  bio              : "Second year student at the University of Toronto studying Economics and Computer Science"
   location         : "Toronto, ON"
   links:
     #- label: "website"
@@ -299,6 +299,22 @@ defaults:
   - scope:
       path: ""
       type: projects
+    values:
+      layout: single
+      author_profile: false
+      share: true
+  # _music
+  - scope:
+      path: ""
+      type: music
+    values:
+      layout: single
+      author_profile: false
+      share: true
+  # _photography
+  - scope:
+      path: ""
+      type: photography
     values:
       layout: single
       author_profile: false
