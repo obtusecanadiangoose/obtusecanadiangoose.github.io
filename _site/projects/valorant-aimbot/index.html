@@ -1,0 +1,518 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.20.2 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Valorant Aimbot [Proof Of Concept] - The Obtuse Canadian Goose</title>
+<meta name="description" content="Undetectable aimbot using opencv and a raspberrypi0">
+
+
+  <meta name="author" content="Liam Ogilvie">
+  
+  <meta property="article:author" content="Liam Ogilvie">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="The Obtuse Canadian Goose">
+<meta property="og:title" content="Valorant Aimbot [Proof Of Concept]">
+<meta property="og:url" content="http://localhost:4000/projects/valorant-aimbot/">
+
+
+  <meta property="og:description" content="Undetectable aimbot using opencv and a raspberrypi0">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/valorant-aimbot-header.png">
+
+
+
+  <meta name="twitter:site" content="@mmistakes">
+  <meta name="twitter:title" content="Valorant Aimbot [Proof Of Concept]">
+  <meta name="twitter:description" content="Undetectable aimbot using opencv and a raspberrypi0">
+  <meta name="twitter:url" content="http://localhost:4000/projects/valorant-aimbot/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:4000/assets/images/valorant-aimbot-header.png">
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2020-11-04T19:21:33-05:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/projects/valorant-aimbot/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Liam Ogilvie",
+      "url": "http://localhost:4000/",
+      "sameAs": ["https://twitter.com/","https://github.com/"]
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="The Obtuse Canadian Goose Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/favicon.png" alt=""></a>
+        
+        <a class="site-title" href="/">
+          The Obtuse Canadian Goose
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/">Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/projects/">Projects</a>
+            </li><li class="masthead__menu-item">
+              <a href="/photography/">Photography</a>
+            </li><li class="masthead__menu-item">
+              <a href="/music/">Music</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: url('/assets/images/valorant-aimbot-header.png');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Valorant Aimbot [Proof Of Concept]
+
+        
+      </h1>
+      
+        <p class="page__lead">Undetectable aimbot using opencv and a raspberrypi0
+</p>
+      
+      
+
+
+      
+      
+        <p>
+        
+          <a href="https://github.com" class="btn btn--light-outline btn--large">View on github</a>
+        
+      
+    </div>
+  
+  
+</div>
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      <h3>Goals:</h3>
+      
+      
+    
+      
+      
+      <p>Find enemy head</p>
+
+      
+    
+      
+      
+      <p>Send co-ordinates to a raspberry pi acting as a HID mouse</p>
+
+      
+    
+      
+      
+      <p>Move mouse and click on enemy head</p>
+
+      
+    
+      
+      <h3>Experience Gained:</h3>
+      
+      
+    
+      
+      
+      <p>OpenCV - masking, bounding boxes</p>
+
+      
+    
+      
+      
+      <p>UDP sockets</p>
+
+      
+    
+      
+      
+      <p>Raspberrypi0 HID emulation</p>
+
+      
+    
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Valorant Aimbot [Proof Of Concept]">
+    <meta itemprop="description" content="Undetectable aimbot using opencv and a raspberrypi0">
+    <meta itemprop="datePublished" content="2020-11-04T19:21:33-05:00">
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>Is it perfect? No.</p>
+
+<p>Does it work? Sometimes.</p>
+
+<p>Do I trust this more than I trust my own aiming skills? Absolutely Not.</p>
+
+<h2 id="general-concept">General Concept:</h2>
+<p>The program is broken up into roughly 3 steps:</p>
+
+<ol>
+  <li>Mss takes a 250 x 250 screenshot of the area around the crosshair</li>
+  <li>Opencv uses thresholding, masking and contouring to draw bounding boxes and estimate the location of the head</li>
+  <li>The relative position of the head is send to the raspberrypi that is acting as a HID mouse</li>
+</ol>
+
+<h2 id="can-you-get-banned">Can you get banned?</h2>
+<p>No, since it does not affect Valorant in any way, and interfaces with it in a way that looks legitimate (the rpi0 is indistinguishable from a normal mouse) 
+it is undetectable and therefore, you can’t get banned. 
+It uses the same information that is available to a player, however the program is able to process it faster and more precisely</p>
+
+<h2 id="how-it-works">How it Works:</h2>
+
+<ol>
+  <li>This is the raw input that the player sees, mss is able to screenshot at ~30fps.</li>
+</ol>
+
+<figure style="width: 248px" class="align-center">
+  <img src="http://localhost:4000/assets/images/VA-raw.png" alt="" />
+</figure>
+
+<ol>
+  <li>This is the first and most important masking pass, it cuts out all other colours except for a very particular shade of purple, after the inital mask, some slight thresholding is done to 
+improve the contouring, and allow the contouring to accurately identify enemy players.</li>
+</ol>
+
+<figure style="width: 248px" class="align-center">
+  <img src="http://localhost:4000/assets/images/VA-masked.png" alt="" />
+</figure>
+
+<ol>
+  <li>While this is just basic contouring to find all connected edges, it is helped by thresholding and masking.</li>
+</ol>
+
+<figure style="width: 248px" class="align-center">
+  <img src="http://localhost:4000/assets/images/VA-contoured.png" alt="" />
+</figure>
+
+<ol>
+  <li>A bounding box is drawn around all the contours, and the largest one (which is <em>usually</em> an enemy player) is identified. The head is found by taking the width of the box // 2
+and the height of the box // 8. It’s not exact, but it does the job in most scenarios.</li>
+</ol>
+
+<figure style="width: 248px" class="align-center">
+  <img src="http://localhost:4000/assets/images/VA-head.png" alt="" />
+</figure>
+
+<p>All 4 components in action:</p>
+
+<figure style="width: 130px" class="align-left">
+  <img src="http://localhost:4000/assets/images/VA-raw.gif" alt="" />
+  <figcaption>1. Raw Input</figcaption>
+</figure>
+<figure style="width: 130px" class="align-left">
+  <img src="http://localhost:4000/assets/images/VA-masked.gif" alt="" />
+  <figcaption>2. Masked</figcaption>
+</figure>
+<figure style="width: 130px" class="align-left">
+  <img src="http://localhost:4000/assets/images/VA-contoured.gif" alt="" />
+  <figcaption>3. Contours</figcaption>
+</figure>
+<figure style="width: 130px" class="align-left">
+  <img src="http://localhost:4000/assets/images/VA-head.gif" alt="" />
+  <figcaption>4. Estimated head location</figcaption>
+</figure>
+
+<ol>
+  <li>
+    <p>The regular head location (the red dot) is sent to the raspberrypi along with a “left-click” command.</p>
+  </li>
+  <li>
+    <p>In-game, the player snaps to an enemy’s head and shoots.</p>
+  </li>
+</ol>
+
+<p>Sometimes it worked, but more often then not, it was too slow got easily confused</p>
+
+<h2 id="demo-montage">Demo Montage:</h2>
+<p>[<em>Coming Soon</em>]</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#projects" class="page__taxonomy-item" rel="tag">projects</a>
+    
+    </span>
+  </p>
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-11-04T19:21:33-05:00">November 4, 2020</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?via=mmistakes&text=Valorant+Aimbot+%5BProof+Of+Concept%5D%20http%3A%2F%2Flocalhost%3A4000%2Fprojects%2Fvalorant-aimbot%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fprojects%2Fvalorant-aimbot%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fprojects%2Fvalorant-aimbot%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/projects/ginger-gulp-identity/" class="pagination--pager" title="Ginger Gulp Identity
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://instagram.com/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 Liam Ogilvie. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+  </body>
+</html>

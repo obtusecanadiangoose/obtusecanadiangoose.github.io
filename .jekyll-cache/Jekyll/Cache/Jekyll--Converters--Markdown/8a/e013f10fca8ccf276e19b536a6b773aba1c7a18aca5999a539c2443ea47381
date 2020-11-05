@@ -1,0 +1,70 @@
+I"9<p>Is it perfect? No.</p>
+
+<p>Does it work? Sometimes.</p>
+
+<p>Do I trust my own aiming skills more than I trust this? Absolutely.</p>
+
+<h2 id="general-concept">General Concept:</h2>
+<p>The program is broken up into roughly 3 steps:</p>
+
+<ol>
+  <li>Mss takes a 250 x 250 screenshot of the area around the crosshair</li>
+  <li>Opencv uses thresholding, masking and contouring to draw bounding boxes and estimate the location of the head</li>
+  <li>The relative position of the head is send to the raspberrypi that is acting as a HID mouse</li>
+</ol>
+
+<h2 id="can-you-get-banned">Can you get banned?</h2>
+<p>No, since it does not affect Valorant in any way, and interfaces with it in a way that looks legitimate (the rpi0 is indistinguishable from a normal mouse) 
+it is undetectable and therefore, you can’t get banned. 
+It uses the same information that is available to a player, however the program is able to process it faster and more precisely</p>
+
+<h2 id="can-you-get-banned-1">Can you get banned?</h2>
+<p>No, since it does not affect Valorant in any way, and interfaces with it in a way that looks legitimate (the rpi0 is indistinguishable from a normal mouse) 
+it is undetectable and therefore, you can’t get banned. 
+It uses the same information that is available to a player, however the program is able to process it faster and more precisely</p>
+
+<h2 id="how-it-works">How it Works:</h2>
+<figure style="width: 150px" class="align-left">
+  <img src="http://localhost:4000/assets/images/VA-raw.gif" alt="" />
+  <figcaption>Itty-bitty caption.</figcaption>
+</figure>
+<figure style="width: 150px" class="align-left">
+  <img src="http://localhost:4000/assets/images/VA-masked.gif" alt="" />
+  <figcaption>Itty-bitty caption.</figcaption>
+</figure>
+
+<figure class="half">
+	<a href="/assets/images/VA-raw.gif"><img src="/assets/images/VA-raw.gif" width="124" height="124" /></a>
+	<a href="/assets/images/VA-masked.gif"><img src="/assets/images/VA-masked.gif" /></a>
+</figure>
+<figure class="half">
+	<a href="/assets/images/VA-contoured.gif"><img src="/assets/images/VA-contoured.gif" /></a>
+	<a href="/assets/images/VA-head.gif"><img src="/assets/images/VA-head.gif" /></a>
+</figure>
+
+<h1 id="h1">H1</h1>
+<h2 id="h2">H2</h2>
+<h3 id="h3">H3</h3>
+<h4 id="h4">H4</h4>
+<h5 id="h5">H5</h5>
+<h6 id="h6">H6</h6>
+
+<p><strong>This text is bold</strong></p>
+
+<p><em>This text is italic</em></p>
+
+<p><strong><em>How about some bold italic</em></strong></p>
+
+<p>This is a link to <a href="https://google.ca">Google</a> that I can link down below</p>
+
+<p><img src="http://4.bp.blogspot.com/-W-Q7_l1OoxY/UWAJSrtvn_I/AAAAAAAASVM/eMqye-hpAu4/s1600/world-s-cutest-kitten.jpg" alt="This" /> is the #1 result for “cute cat” on google images</p>
+
+<p><code class="language-plaintext highlighter-rouge">This is in a code snippet</code></p>
+
+<p>This is a larger block of python code:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"Hi, "</span><span class="o">+</span><span class="n">name</span><span class="p">)</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s">"user"</span><span class="p">)</span></code></pre></figure>
+
+:ET

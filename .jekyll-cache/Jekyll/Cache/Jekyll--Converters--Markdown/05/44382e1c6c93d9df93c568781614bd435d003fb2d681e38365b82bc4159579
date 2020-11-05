@@ -1,0 +1,63 @@
+I"�
+<p>Is it perfect? No.</p>
+
+<p>Does it work? Sometimes.</p>
+
+<p>Do I trust my own aiming skills more than I trust this? Absolutely.</p>
+
+<h2 id="general-concept">General Concept:</h2>
+<p>The program is broken up into roughly 3 steps:</p>
+
+<ol>
+  <li>Mss takes a 250 x 250 screenshot of the area around the crosshair</li>
+  <li>Opencv uses thresholding, masking and contouring to draw bounding boxes and estimate the location of the head</li>
+  <li>The relative position of the head is send to the raspberrypi that is acting as a HID mouse</li>
+</ol>
+
+<h2 id="can-you-get-banned">Can you get banned?</h2>
+<p>No, since it does not affect Valorant in any way, and interfaces with it in a way that looks legitimate (the rpi0 is indistinguishable from a normal mouse) 
+it is undetectable and therefore, you can’t get banned. 
+It uses the same information that is available to a player, however the program is able to process it faster and more precisely</p>
+
+<h2 id="how-it-works">How it Works:</h2>
+
+<figure style="width: 248px" class="align-center">
+  <img src="http://localhost:4000/assets/images/VA-raw.png" alt="" />
+</figure>
+<ol>
+  <li>
+    <p>This is the raw input that the player sees, mss is able to screenshot at ~30fps.</p>
+  </li>
+  <li>
+    <p>This is the first and most import masking pass, it cuts out all other colours except for a very particular shade of purple, after the inital mask, some slight thresholding is done to 
+improve the contouring, and allow the contouring to accurately identify enemy players.</p>
+  </li>
+  <li>
+    <p>While this is just basic contouring to find all connected edges, it is helped by the thresholding and masking.</p>
+  </li>
+  <li>
+    <p>A bounding box is drawn around all the contours, and the largest one (which is <em>usually</em> an enemy player) is set aside. THe head is found by taking the width of the box // 2
+and the height of the box //8. It’s not exact, but it does the job in most scenarios.</p>
+  </li>
+</ol>
+
+<figure style="width: 130px" class="align-left">
+  <img src="http://localhost:4000/assets/images/VA-raw.gif" alt="" />
+  <figcaption>1. Raw Input</figcaption>
+</figure>
+<figure style="width: 130px" class="align-left">
+  <img src="http://localhost:4000/assets/images/VA-masked.gif" alt="" />
+  <figcaption>2. Masked</figcaption>
+</figure>
+<figure style="width: 130px" class="align-left">
+  <img src="http://localhost:4000/assets/images/VA-contoured.gif" alt="" />
+  <figcaption>3. Contours</figcaption>
+</figure>
+<figure style="width: 130px" class="align-left">
+  <img src="http://localhost:4000/assets/images/VA-head.gif" alt="" />
+  <figcaption>4. Estimated head location</figcaption>
+</figure>
+
+<h2 id="demo-montage">Demo Montage:</h2>
+<p>[<em>Coming Soon</em>]</p>
+:ET
