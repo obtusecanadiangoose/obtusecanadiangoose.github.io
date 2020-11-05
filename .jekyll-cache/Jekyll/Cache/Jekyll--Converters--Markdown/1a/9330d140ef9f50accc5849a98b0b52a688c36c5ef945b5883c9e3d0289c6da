@@ -1,8 +1,8 @@
-I"2<p>Is it perfect? No.</p>
+I"�<p>Is it perfect? No.</p>
 
 <p>Does it work? Sometimes.</p>
 
-<p>Do I trust my own aiming skills more than I trust this? Absolutely.</p>
+<p>Do I trust this more than I trust my own aiming skills? Absolutely Not.</p>
 
 <h2 id="general-concept">General Concept:</h2>
 <p>The program is broken up into roughly 3 steps:</p>
@@ -20,11 +20,17 @@ It uses the same information that is available to a player, however the program 
 
 <h2 id="how-it-works">How it Works:</h2>
 
+<ol>
+  <li>This is the raw input that the player sees, mss is able to screenshot at ~30fps.</li>
+</ol>
+
 <figure style="width: 248px" class="align-center">
   <img src="http://localhost:4000/assets/images/VA-raw.png" alt="" />
 </figure>
+
 <ol>
-  <li>This is the raw input that the player sees, mss is able to screenshot at ~30fps.</li>
+  <li>This is the first and most important masking pass, it cuts out all other colours except for a very particular shade of purple, after the inital mask, some slight thresholding is done to 
+improve the contouring, and allow the contouring to accurately identify enemy players.</li>
 </ol>
 
 <figure style="width: 248px" class="align-center">
@@ -32,8 +38,7 @@ It uses the same information that is available to a player, however the program 
 </figure>
 
 <ol>
-  <li>This is the first and most import masking pass, it cuts out all other colours except for a very particular shade of purple, after the inital mask, some slight thresholding is done to 
-improve the contouring, and allow the contouring to accurately identify enemy players.</li>
+  <li>While this is just basic contouring to find all connected edges, it is helped by thresholding and masking.</li>
 </ol>
 
 <figure style="width: 248px" class="align-center">
@@ -41,17 +46,15 @@ improve the contouring, and allow the contouring to accurately identify enemy pl
 </figure>
 
 <ol>
-  <li>While this is just basic contouring to find all connected edges, it is helped by thresholding and masking.</li>
+  <li>A bounding box is drawn around all the contours, and the largest one (which is <em>usually</em> an enemy player) is identified. The head is found by taking the width of the box // 2
+and the height of the box // 8. It’s not exact, but it does the job in most scenarios.</li>
 </ol>
 
 <figure style="width: 248px" class="align-center">
   <img src="http://localhost:4000/assets/images/VA-head.png" alt="" />
 </figure>
 
-<ol>
-  <li>A bounding box is drawn around all the contours, and the largest one (which is <em>usually</em> an enemy player) is set aside. THe head is found by taking the width of the box // 2
-and the height of the box //8. It’s not exact, but it does the job in most scenarios.</li>
-</ol>
+<p>All 4 components in action:</p>
 
 <figure style="width: 130px" class="align-left">
   <img src="http://localhost:4000/assets/images/VA-raw.gif" alt="" />
@@ -69,6 +72,8 @@ and the height of the box //8. It’s not exact, but it does the job in most sce
   <img src="http://localhost:4000/assets/images/VA-head.gif" alt="" />
   <figcaption>4. Estimated head location</figcaption>
 </figure>
+
+<p>The regular head location (the red dot) is then sent to the raspberrypi along with a “left-click” command.</p>
 
 <h2 id="demo-montage">Demo Montage:</h2>
 <p>[<em>Coming Soon</em>]</p>

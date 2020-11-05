@@ -86,11 +86,7 @@ All 4 components in action:
   <figcaption>4. Estimated head location</figcaption>
 </figure>  
 
-5. The regular head location (the red dot) is sent to the raspberrypi along with a "left-click" command.
-
-6. In-game, the player snaps to an enemy's head and shoots.
-
-Sometimes it worked, but more often then not, it was too slow got easily confused
+The regular head location (the red dot) is then sent to the raspberrypi along with a "left-click" command.
 
 ## Demo Montage:
 [*Coming Soon*]
