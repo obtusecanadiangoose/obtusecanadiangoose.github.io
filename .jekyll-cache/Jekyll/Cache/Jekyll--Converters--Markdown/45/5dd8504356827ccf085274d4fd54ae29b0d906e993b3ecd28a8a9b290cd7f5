@@ -1,0 +1,71 @@
+I"�
+<p>var idx = lunr(function () {
+  this.field(‘title’)
+  this.field(‘excerpt’)
+  this.field(‘categories’)
+  this.field(‘tags’)
+  this.ref(‘id’)</p>
+
+<p>this.pipeline.remove(lunr.trimmer)</p>
+
+<p>for (var item in store) {
+    this.add({
+      title: store[item].title,
+      excerpt: store[item].excerpt,
+      categories: store[item].categories,
+      tags: store[item].tags,
+      id: item
+    })
+  }
+});</p>
+
+<p>$(document).ready(function() {
+  $(‘input#search’).on(‘keyup’, function () {
+    var resultdiv = $(‘#results’);
+    var query = $(this).val().toLowerCase();
+    var result =
+      idx.query(function (q) {
+        query.split(lunr.tokenizer.separator).forEach(function (term) {
+          q.term(term, { boost: 100 })
+          if(query.lastIndexOf(“ “) != query.length-1){
+            q.term(term, {  usePipeline: false, wildcard: lunr.Query.wildcard.TRAILING, boost: 10 })
+          }
+          if (term != “”){
+            q.term(term, {  usePipeline: false, editDistance: 1, boost: 1 })
+          }
+        })
+      });
+    resultdiv.empty();
+    resultdiv.prepend(‘&lt;p class="results__found"&gt;‘+result.length+’ Result(s) found&lt;/p&gt;’);
+    for (var item in result) {
+      var ref = result[item].ref;
+      if(store[ref].teaser){
+        var searchitem =
+          ‘&lt;div class="list__item"&gt;’+
+            ‘&lt;article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork"&gt;’+
+              ‘&lt;h2 class="archive__item-title" itemprop="headline"&gt;’+
+                ‘<a href="'+store[ref].url+'" rel="permalink">‘+store[ref].title+’</a>’+
+              ‘&lt;/h2&gt;’+
+              ‘&lt;div class="archive__item-teaser"&gt;’+
+                ‘<img src="'+store[ref].teaser+'" alt="" />’+
+              ‘&lt;/div&gt;’+
+              ‘&lt;p class="archive__item-excerpt" itemprop="description"&gt;‘+store[ref].excerpt.split(“ “).splice(0,20).join(“ “)+’…&lt;/p&gt;’+
+            ‘&lt;/article&gt;’+
+          ‘&lt;/div&gt;’;
+      }
+      else{
+    	  var searchitem =
+          ‘&lt;div class="list__item"&gt;’+
+            ‘&lt;article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork"&gt;’+
+              ‘&lt;h2 class="archive__item-title" itemprop="headline"&gt;’+
+                ‘<a href="'+store[ref].url+'" rel="permalink">‘+store[ref].title+’</a>’+
+              ‘&lt;/h2&gt;’+
+              ‘&lt;p class="archive__item-excerpt" itemprop="description"&gt;‘+store[ref].excerpt.split(“ “).splice(0,20).join(“ “)+’…&lt;/p&gt;’+
+            ‘&lt;/article&gt;’+
+          ‘&lt;/div&gt;’;
+      }
+      resultdiv.append(searchitem);
+    }
+  });
+});</p>
+:ET

@@ -1,0 +1,865 @@
+I"5]<p>step1list = new Array();
+step1list[“ΦΑΓΙΑ”] = “ΦΑ”;
+step1list[“ΦΑΓΙΟΥ”] = “ΦΑ”;
+step1list[“ΦΑΓΙΩΝ”] = “ΦΑ”;
+step1list[“ΣΚΑΓΙΑ”] = “ΣΚΑ”;
+step1list[“ΣΚΑΓΙΟΥ”] = “ΣΚΑ”;
+step1list[“ΣΚΑΓΙΩΝ”] = “ΣΚΑ”;
+step1list[“ΟΛΟΓΙΟΥ”] = “ΟΛΟ”;
+step1list[“ΟΛΟΓΙΑ”] = “ΟΛΟ”;
+step1list[“ΟΛΟΓΙΩΝ”] = “ΟΛΟ”;
+step1list[“ΣΟΓΙΟΥ”] = “ΣΟ”;
+step1list[“ΣΟΓΙΑ”] = “ΣΟ”;
+step1list[“ΣΟΓΙΩΝ”] = “ΣΟ”;
+step1list[“ΤΑΤΟΓΙΑ”] = “ΤΑΤΟ”;
+step1list[“ΤΑΤΟΓΙΟΥ”] = “ΤΑΤΟ”;
+step1list[“ΤΑΤΟΓΙΩΝ”] = “ΤΑΤΟ”;
+step1list[“ΚΡΕΑΣ”] = “ΚΡΕ”;
+step1list[“ΚΡΕΑΤΟΣ”] = “ΚΡΕ”;
+step1list[“ΚΡΕΑΤΑ”] = “ΚΡΕ”;
+step1list[“ΚΡΕΑΤΩΝ”] = “ΚΡΕ”;
+step1list[“ΠΕΡΑΣ”] = “ΠΕΡ”;
+step1list[“ΠΕΡΑΤΟΣ”] = “ΠΕΡ”;
+step1list[“ΠΕΡΑΤΑ”] = “ΠΕΡ”;
+step1list[“ΠΕΡΑΤΩΝ”] = “ΠΕΡ”;
+step1list[“ΤΕΡΑΣ”] = “ΤΕΡ”;
+step1list[“ΤΕΡΑΤΟΣ”] = “ΤΕΡ”;
+step1list[“ΤΕΡΑΤΑ”] = “ΤΕΡ”;
+step1list[“ΤΕΡΑΤΩΝ”] = “ΤΕΡ”;
+step1list[“ΦΩΣ”] = “ΦΩ”;
+step1list[“ΦΩΤΟΣ”] = “ΦΩ”;
+step1list[“ΦΩΤΑ”] = “ΦΩ”;
+step1list[“ΦΩΤΩΝ”] = “ΦΩ”;
+step1list[“ΚΑΘΕΣΤΩΣ”] = “ΚΑΘΕΣΤ”;
+step1list[“ΚΑΘΕΣΤΩΤΟΣ”] = “ΚΑΘΕΣΤ”;
+step1list[“ΚΑΘΕΣΤΩΤΑ”] = “ΚΑΘΕΣΤ”;
+step1list[“ΚΑΘΕΣΤΩΤΩΝ”] = “ΚΑΘΕΣΤ”;
+step1list[“ΓΕΓΟΝΟΣ”] = “ΓΕΓΟΝ”;
+step1list[“ΓΕΓΟΝΟΤΟΣ”] = “ΓΕΓΟΝ”;
+step1list[“ΓΕΓΟΝΟΤΑ”] = “ΓΕΓΟΝ”;
+step1list[“ΓΕΓΟΝΟΤΩΝ”] = “ΓΕΓΟΝ”;</p>
+
+<p>v = “[ΑΕΗΙΟΥΩ]”;
+v2 = “[ΑΕΗΙΟΩ]”</p>
+
+<p>function stemWord(w) {
+  var stem;
+  var suffix;
+  var firstch;
+  var origword = w;
+  test1 = new Boolean(true);</p>
+
+<p>if(w.length &lt; 4) {
+    return w;
+  }</p>
+
+<p>var re;
+  var re2;
+  var re3;
+  var re4;</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>re = /(.*)(ΦΑΓΙΑ</td>
+      <td>ΦΑΓΙΟΥ</td>
+      <td>ΦΑΓΙΩΝ</td>
+      <td>ΣΚΑΓΙΑ</td>
+      <td>ΣΚΑΓΙΟΥ</td>
+      <td>ΣΚΑΓΙΩΝ</td>
+      <td>ΟΛΟΓΙΟΥ</td>
+      <td>ΟΛΟΓΙΑ</td>
+      <td>ΟΛΟΓΙΩΝ</td>
+      <td>ΣΟΓΙΟΥ</td>
+      <td>ΣΟΓΙΑ</td>
+      <td>ΣΟΓΙΩΝ</td>
+      <td>ΤΑΤΟΓΙΑ</td>
+      <td>ΤΑΤΟΓΙΟΥ</td>
+      <td>ΤΑΤΟΓΙΩΝ</td>
+      <td>ΚΡΕΑΣ</td>
+      <td>ΚΡΕΑΤΟΣ</td>
+      <td>ΚΡΕΑΤΑ</td>
+      <td>ΚΡΕΑΤΩΝ</td>
+      <td>ΠΕΡΑΣ</td>
+      <td>ΠΕΡΑΤΟΣ</td>
+      <td>ΠΕΡΑΤΑ</td>
+      <td>ΠΕΡΑΤΩΝ</td>
+      <td>ΤΕΡΑΣ</td>
+      <td>ΤΕΡΑΤΟΣ</td>
+      <td>ΤΕΡΑΤΑ</td>
+      <td>ΤΕΡΑΤΩΝ</td>
+      <td>ΦΩΣ</td>
+      <td>ΦΩΤΟΣ</td>
+      <td>ΦΩΤΑ</td>
+      <td>ΦΩΤΩΝ</td>
+      <td>ΚΑΘΕΣΤΩΣ</td>
+      <td>ΚΑΘΕΣΤΩΤΟΣ</td>
+      <td>ΚΑΘΕΣΤΩΤΑ</td>
+      <td>ΚΑΘΕΣΤΩΤΩΝ</td>
+      <td>ΓΕΓΟΝΟΣ</td>
+      <td>ΓΕΓΟΝΟΤΟΣ</td>
+      <td>ΓΕΓΟΝΟΤΑ</td>
+      <td>ΓΕΓΟΝΟΤΩΝ)$/;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>if(re.test(w)) {
+    var fp = re.exec(w);
+    stem = fp[1];
+    suffix = fp[2];
+    w = stem + step1list[suffix];
+    test1 = false;
+  }</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>re = /^(.+?)(ΑΔΕΣ</td>
+      <td>ΑΔΩΝ)$/;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>if(re.test(w)) {
+    var fp = re.exec(w);
+    stem = fp[1];
+    w = stem;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>reg1 = /(ΟΚ|ΜΑΜ|ΜΑΝ|ΜΠΑΜΠ|ΠΑΤΕΡ|ΓΙΑΓΙ|ΝΤΑΝΤ|ΚΥΡ|ΘΕΙ|ΠΕΘΕΡ)$/;
+
+if(!(reg1.test(w))) {
+  w = w + "ΑΔ";
+}   }
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>re2 = /^(.+?)(ΕΔΕΣ</td>
+      <td>ΕΔΩΝ)$/;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>if(re2.test(w)) {
+    var fp = re2.exec(w);
+    stem = fp[1];
+    w = stem;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exept2 = /(ΟΠ|ΙΠ|ΕΜΠ|ΥΠ|ΓΗΠ|ΔΑΠ|ΚΡΑΣΠ|ΜΙΛ)$/;
+
+if(exept2.test(w)) {
+  w = w + "ΕΔ";
+}   }
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>re3 = /^(.+?)(ΟΥΔΕΣ</td>
+      <td>ΟΥΔΩΝ)$/;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>if(re3.test(w)) {
+    var fp = re3.exec(w);
+    stem = fp[1];
+    w = stem;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exept3 = /(ΑΡΚ|ΚΑΛΙΑΚ|ΠΕΤΑΛ|ΛΙΧ|ΠΛΕΞ|ΣΚ|Σ|ΦΛ|ΦΡ|ΒΕΛ|ΛΟΥΛ|ΧΝ|ΣΠ|ΤΡΑΓ|ΦΕ)$/;
+
+if(exept3.test(w)) {
+  w = w + "ΟΥΔ";
+}   }
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>re4 = /^(.+?)(ΕΩΣ</td>
+      <td>ΕΩΝ)$/;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>if(re4.test(w)) {
+    var fp = re4.exec(w);
+    stem = fp[1];
+    w = stem;
+    test1 = false;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exept4 = /^(Θ|Δ|ΕΛ|ΓΑΛ|Ν|Π|ΙΔ|ΠΑΡ)$/;
+
+if(exept4.test(w)) {
+  w = w + "Ε";
+}   }
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>re = /^(.+?)(ΙΑ</td>
+      <td>ΙΟΥ</td>
+      <td>ΙΩΝ)$/;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>if(re.test(w)) {
+    var fp = re.exec(w);
+    stem = fp[1];
+    w = stem;
+    re2 = new RegExp(v + “$”);
+    test1 = false;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if(re2.test(w)) {
+  w = stem + "Ι";
+}   }
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>re = /^(.+?)(ΙΚΑ</td>
+      <td>ΙΚΟ</td>
+      <td>ΙΚΟΥ</td>
+      <td>ΙΚΩΝ)$/;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>if(re.test(w)) {
+    var fp = re.exec(w);
+    stem = fp[1];
+    w = stem;
+    test1 = false;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>re2 = new RegExp(v + "$");
+exept5 = /^(ΑΛ|ΑΔ|ΕΝΔ|ΑΜΑΝ|ΑΜΜΟΧΑΛ|ΗΘ|ΑΝΗΘ|ΑΝΤΙΔ|ΦΥΣ|ΒΡΩΜ|ΓΕΡ|ΕΞΩΔ|ΚΑΛΠ|ΚΑΛΛΙΝ|ΚΑΤΑΔ|ΜΟΥΛ|ΜΠΑΝ|ΜΠΑΓΙΑΤ|ΜΠΟΛ|ΜΠΟΣ|ΝΙΤ|ΞΙΚ|ΣΥΝΟΜΗΛ|ΠΕΤΣ|ΠΙΤΣ|ΠΙΚΑΝΤ|ΠΛΙΑΤΣ|ΠΟΣΤΕΛΝ|ΠΡΩΤΟΔ|ΣΕΡΤ|ΣΥΝΑΔ|ΤΣΑΜ|ΥΠΟΔ|ΦΙΛΟΝ|ΦΥΛΟΔ|ΧΑΣ)$/;
+
+if((exept5.test(w)) || (re2.test(w))) {
+  w = w + "ΙΚ";
+}   }
+</code></pre></div></div>
+
+<p>re = /^(.+?)(ΑΜΕ)$/;
+  re2 = /^(.+?)(ΑΓΑΜΕ|ΗΣΑΜΕ|ΟΥΣΑΜΕ|ΗΚΑΜΕ|ΗΘΗΚΑΜΕ)$/;
+  if(w == “ΑΓΑΜΕ”) {
+    w = “ΑΓΑΜ”;
+  }</p>
+
+<p>if(re2.test(w)) {
+    var fp = re2.exec(w);
+    stem = fp[1];
+    w = stem;
+    test1 = false;
+  }</p>
+
+<p>if(re.test(w)) {
+    var fp = re.exec(w);
+    stem = fp[1];
+    w = stem;
+    test1 = false;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exept6 = /^(ΑΝΑΠ|ΑΠΟΘ|ΑΠΟΚ|ΑΠΟΣΤ|ΒΟΥΒ|ΞΕΘ|ΟΥΛ|ΠΕΘ|ΠΙΚΡ|ΠΟΤ|ΣΙΧ|Χ)$/;
+
+if(exept6.test(w)) {
+  w = w + "ΑΜ";
+}   }
+</code></pre></div></div>
+
+<p>re2 = /^(.+?)(ΑΝΕ)$/;
+  re3 = /^(.+?)(ΑΓΑΝΕ|ΗΣΑΝΕ|ΟΥΣΑΝΕ|ΙΟΝΤΑΝΕ|ΙΟΤΑΝΕ|ΙΟΥΝΤΑΝΕ|ΟΝΤΑΝΕ|ΟΤΑΝΕ|ΟΥΝΤΑΝΕ|ΗΚΑΝΕ|ΗΘΗΚΑΝΕ)$/;</p>
+
+<p>if(re3.test(w)) {
+    var fp = re3.exec(w);
+    stem = fp[1];
+    w = stem;
+    test1 = false;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>re3 = /^(ΤΡ|ΤΣ)$/;
+
+if(re3.test(w)) {
+  w = w + "ΑΓΑΝ";
+}   }
+</code></pre></div></div>
+
+<p>if(re2.test(w)) {
+    var fp = re2.exec(w);
+    stem = fp[1];
+    w = stem;
+    test1 = false;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>re2 = new RegExp(v2 + "$");
+exept7 = /^(ΒΕΤΕΡ|ΒΟΥΛΚ|ΒΡΑΧΜ|Γ|ΔΡΑΔΟΥΜ|Θ|ΚΑΛΠΟΥΖ|ΚΑΣΤΕΛ|ΚΟΡΜΟΡ|ΛΑΟΠΛ|ΜΩΑΜΕΘ|Μ|ΜΟΥΣΟΥΛΜ|Ν|ΟΥΛ|Π|ΠΕΛΕΚ|ΠΛ|ΠΟΛΙΣ|ΠΟΡΤΟΛ|ΣΑΡΑΚΑΤΣ|ΣΟΥΛΤ|ΤΣΑΡΛΑΤ|ΟΡΦ|ΤΣΙΓΓ|ΤΣΟΠ|ΦΩΤΟΣΤΕΦ|Χ|ΨΥΧΟΠΛ|ΑΓ|ΟΡΦ|ΓΑΛ|ΓΕΡ|ΔΕΚ|ΔΙΠΛ|ΑΜΕΡΙΚΑΝ|ΟΥΡ|ΠΙΘ|ΠΟΥΡΙΤ|Σ|ΖΩΝΤ|ΙΚ|ΚΑΣΤ|ΚΟΠ|ΛΙΧ|ΛΟΥΘΗΡ|ΜΑΙΝΤ|ΜΕΛ|ΣΙΓ|ΣΠ|ΣΤΕΓ|ΤΡΑΓ|ΤΣΑΓ|Φ|ΕΡ|ΑΔΑΠ|ΑΘΙΓΓ|ΑΜΗΧ|ΑΝΙΚ|ΑΝΟΡΓ|ΑΠΗΓ|ΑΠΙΘ|ΑΤΣΙΓΓ|ΒΑΣ|ΒΑΣΚ|ΒΑΘΥΓΑΛ|ΒΙΟΜΗΧ|ΒΡΑΧΥΚ|ΔΙΑΤ|ΔΙΑΦ|ΕΝΟΡΓ|ΘΥΣ|ΚΑΠΝΟΒΙΟΜΗΧ|ΚΑΤΑΓΑΛ|ΚΛΙΒ|ΚΟΙΛΑΡΦ|ΛΙΒ|ΜΕΓΛΟΒΙΟΜΗΧ|ΜΙΚΡΟΒΙΟΜΗΧ|ΝΤΑΒ|ΞΗΡΟΚΛΙΒ|ΟΛΙΓΟΔΑΜ|ΟΛΟΓΑΛ|ΠΕΝΤΑΡΦ|ΠΕΡΗΦ|ΠΕΡΙΤΡ|ΠΛΑΤ|ΠΟΛΥΔΑΠ|ΠΟΛΥΜΗΧ|ΣΤΕΦ|ΤΑΒ|ΤΕΤ|ΥΠΕΡΗΦ|ΥΠΟΚΟΠ|ΧΑΜΗΛΟΔΑΠ|ΨΗΛΟΤΑΒ)$/;
+
+if((re2.test(w)) || (exept7.test(w))) {
+  w = w + "ΑΝ";
+}   }
+</code></pre></div></div>
+
+<p>re3 = /^(.+?)(ΕΤΕ)$/;
+  re4 = /^(.+?)(ΗΣΕΤΕ)$/;</p>
+
+<p>if(re4.test(w)) {
+    var fp = re4.exec(w);
+    stem = fp[1];
+    w = stem;
+    test1 = false;
+  }</p>
+
+<p>if(re3.test(w)) {
+    var fp = re3.exec(w);
+    stem = fp[1];
+    w = stem;
+    test1 = false;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>re3 = new RegExp(v2 + "$");
+exept8 = /(ΟΔ|ΑΙΡ|ΦΟΡ|ΤΑΘ|ΔΙΑΘ|ΣΧ|ΕΝΔ|ΕΥΡ|ΤΙΘ|ΥΠΕΡΘ|ΡΑΘ|ΕΝΘ|ΡΟΘ|ΣΘ|ΠΥΡ|ΑΙΝ|ΣΥΝΔ|ΣΥΝ|ΣΥΝΘ|ΧΩΡ|ΠΟΝ|ΒΡ|ΚΑΘ|ΕΥΘ|ΕΚΘ|ΝΕΤ|ΡΟΝ|ΑΡΚ|ΒΑΡ|ΒΟΛ|ΩΦΕΛ)$/;
+exept9 = /^(ΑΒΑΡ|ΒΕΝ|ΕΝΑΡ|ΑΒΡ|ΑΔ|ΑΘ|ΑΝ|ΑΠΛ|ΒΑΡΟΝ|ΝΤΡ|ΣΚ|ΚΟΠ|ΜΠΟΡ|ΝΙΦ|ΠΑΓ|ΠΑΡΑΚΑΛ|ΣΕΡΠ|ΣΚΕΛ|ΣΥΡΦ|ΤΟΚ|Υ|Δ|ΕΜ|ΘΑΡΡ|Θ)$/;
+
+if((re3.test(w)) || (exept8.test(w)) || (exept9.test(w))) {
+  w = w + "ΕΤ";
+}   }
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>re = /^(.+?)(ΟΝΤΑΣ</td>
+      <td>ΩΝΤΑΣ)$/;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>if(re.test(w)) {
+    var fp = re.exec(w);
+    stem = fp[1];
+    w = stem;
+    test1 = false;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exept10 = /^(ΑΡΧ)$/;
+exept11 = /(ΚΡΕ)$/;
+if(exept10.test(w)) {
+  w = w + "ΟΝΤ";
+}
+if(exept11.test(w)) {
+  w = w + "ΩΝΤ";
+}   }
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>re = /^(.+?)(ΟΜΑΣΤΕ</td>
+      <td>ΙΟΜΑΣΤΕ)$/;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>if(re.test(w)) {
+    var fp = re.exec(w);
+    stem = fp[1];
+    w = stem;
+    test1 = false;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exept11 = /^(ΟΝ)$/;
+
+if(exept11.test(w)) {
+  w = w + "ΟΜΑΣΤ";
+}   }
+</code></pre></div></div>
+
+<p>re = /^(.+?)(ΕΣΤΕ)$/;
+  re2 = /^(.+?)(ΙΕΣΤΕ)$/;</p>
+
+<p>if(re2.test(w)) {
+    var fp = re2.exec(w);
+    stem = fp[1];
+    w = stem;
+    test1 = false;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>re2 = /^(Π|ΑΠ|ΣΥΜΠ|ΑΣΥΜΠ|ΑΚΑΤΑΠ|ΑΜΕΤΑΜΦ)$/;
+
+if(re2.test(w)) {
+  w = w + "ΙΕΣΤ";
+}   }
+</code></pre></div></div>
+
+<p>if(re.test(w)) {
+    var fp = re.exec(w);
+    stem = fp[1];
+    w = stem;
+    test1 = false;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exept12 = /^(ΑΛ|ΑΡ|ΕΚΤΕΛ|Ζ|Μ|Ξ|ΠΑΡΑΚΑΛ|ΑΡ|ΠΡΟ|ΝΙΣ)$/;
+
+if(exept12.test(w)) {
+  w = w + "ΕΣΤ";
+}   }
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>re = /^(.+?)(ΗΚΑ</td>
+      <td>ΗΚΕΣ</td>
+      <td>ΗΚΕ)$/;</td>
+    </tr>
+    <tr>
+      <td>re2 = /^(.+?)(ΗΘΗΚΑ</td>
+      <td>ΗΘΗΚΕΣ</td>
+      <td>ΗΘΗΚΕ)$/;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>if(re2.test(w)) {
+    var fp = re2.exec(w);
+    stem = fp[1];
+    w = stem;
+    test1 = false;
+  }</p>
+
+<p>if(re.test(w)) {
+    var fp = re.exec(w);
+    stem = fp[1];
+    w = stem;
+    test1 = false;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exept13 = /(ΣΚΩΛ|ΣΚΟΥΛ|ΝΑΡΘ|ΣΦ|ΟΘ|ΠΙΘ)$/;
+exept14 = /^(ΔΙΑΘ|Θ|ΠΑΡΑΚΑΤΑΘ|ΠΡΟΣΘ|ΣΥΝΘ|)$/;
+
+if((exept13.test(w)) || (exept14.test(w))) {
+  w = w + "ΗΚ";
+}   }
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>re = /^(.+?)(ΟΥΣΑ</td>
+      <td>ΟΥΣΕΣ</td>
+      <td>ΟΥΣΕ)$/;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>if(re.test(w)) {
+    var fp = re.exec(w);
+    stem = fp[1];
+    w = stem;
+    test1 = false;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exept15 = /^(ΦΑΡΜΑΚ|ΧΑΔ|ΑΓΚ|ΑΝΑΡΡ|ΒΡΟΜ|ΕΚΛΙΠ|ΛΑΜΠΙΔ|ΛΕΧ|Μ|ΠΑΤ|Ρ|Λ|ΜΕΔ|ΜΕΣΑΖ|ΥΠΟΤΕΙΝ|ΑΜ|ΑΙΘ|ΑΝΗΚ|ΔΕΣΠΟΖ|ΕΝΔΙΑΦΕΡ|ΔΕ|ΔΕΥΤΕΡΕΥ|ΚΑΘΑΡΕΥ|ΠΛΕ|ΤΣΑ)$/;
+exept16 = /(ΠΟΔΑΡ|ΒΛΕΠ|ΠΑΝΤΑΧ|ΦΡΥΔ|ΜΑΝΤΙΛ|ΜΑΛΛ|ΚΥΜΑΤ|ΛΑΧ|ΛΗΓ|ΦΑΓ|ΟΜ|ΠΡΩΤ)$/;
+
+if((exept15.test(w)) || (exept16.test(w))) {
+  w = w + "ΟΥΣ";
+}   }
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>re = /^(.+?)(ΑΓΑ</td>
+      <td>ΑΓΕΣ</td>
+      <td>ΑΓΕ)$/;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>if(re.test(w)) {
+    var fp = re.exec(w);
+    stem = fp[1];
+    w = stem;
+    test1 = false;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exept17 = /^(ΨΟΦ|ΝΑΥΛΟΧ)$/;
+exept20 = /(ΚΟΛΛ)$/;
+exept18 = /^(ΑΒΑΣΤ|ΠΟΛΥΦ|ΑΔΗΦ|ΠΑΜΦ|Ρ|ΑΣΠ|ΑΦ|ΑΜΑΛ|ΑΜΑΛΛΙ|ΑΝΥΣΤ|ΑΠΕΡ|ΑΣΠΑΡ|ΑΧΑΡ|ΔΕΡΒΕΝ|ΔΡΟΣΟΠ|ΞΕΦ|ΝΕΟΠ|ΝΟΜΟΤ|ΟΛΟΠ|ΟΜΟΤ|ΠΡΟΣΤ|ΠΡΟΣΩΠΟΠ|ΣΥΜΠ|ΣΥΝΤ|Τ|ΥΠΟΤ|ΧΑΡ|ΑΕΙΠ|ΑΙΜΟΣΤ|ΑΝΥΠ|ΑΠΟΤ|ΑΡΤΙΠ|ΔΙΑΤ|ΕΝ|ΕΠΙΤ|ΚΡΟΚΑΛΟΠ|ΣΙΔΗΡΟΠ|Λ|ΝΑΥ|ΟΥΛΑΜ|ΟΥΡ|Π|ΤΡ|Μ)$/;
+exept19 = /(ΟΦ|ΠΕΛ|ΧΟΡΤ|ΛΛ|ΣΦ|ΡΠ|ΦΡ|ΠΡ|ΛΟΧ|ΣΜΗΝ)$/;
+
+if(((exept18.test(w)) || (exept19.test(w))) &amp;&amp; !((exept17.test(w)) || (exept20.test(w)))) {
+  w = w + "ΑΓ";
+}   }
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>re = /^(.+?)(ΗΣΕ</td>
+      <td>ΗΣΟΥ</td>
+      <td>ΗΣΑ)$/;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>if(re.test(w)) {
+    var fp = re.exec(w);
+    stem = fp[1];
+    w = stem;
+    test1 = false;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exept21 = /^(Ν|ΧΕΡΣΟΝ|ΔΩΔΕΚΑΝ|ΕΡΗΜΟΝ|ΜΕΓΑΛΟΝ|ΕΠΤΑΝ)$/;
+
+if(exept21.test(w)) {
+  w = w + "ΗΣ";
+}   }
+</code></pre></div></div>
+
+<p>re = /^(.+?)(ΗΣΤΕ)$/;</p>
+
+<p>if(re.test(w)) {
+    var fp = re.exec(w);
+    stem = fp[1];
+    w = stem;
+    test1 = false;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exept22 = /^(ΑΣΒ|ΣΒ|ΑΧΡ|ΧΡ|ΑΠΛ|ΑΕΙΜΝ|ΔΥΣΧΡ|ΕΥΧΡ|ΚΟΙΝΟΧΡ|ΠΑΛΙΜΨ)$/;
+
+if(exept22.test(w)) {
+  w = w + "ΗΣΤ";
+}   }
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>re = /^(.+?)(ΟΥΝΕ</td>
+      <td>ΗΣΟΥΝΕ</td>
+      <td>ΗΘΟΥΝΕ)$/;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>if(re.test(w)) {
+    var fp = re.exec(w);
+    stem = fp[1];
+    w = stem;
+    test1 = false;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exept23 = /^(Ν|Ρ|ΣΠΙ|ΣΤΡΑΒΟΜΟΥΤΣ|ΚΑΚΟΜΟΥΤΣ|ΕΞΩΝ)$/;
+
+if(exept23.test(w)) {
+  w = w + "ΟΥΝ";
+}   }
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>re = /^(.+?)(ΟΥΜΕ</td>
+      <td>ΗΣΟΥΜΕ</td>
+      <td>ΗΘΟΥΜΕ)$/;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>if(re.test(w)) {
+    var fp = re.exec(w);
+    stem = fp[1];
+    w = stem;
+    test1 = false;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exept24 = /^(ΠΑΡΑΣΟΥΣ|Φ|Χ|ΩΡΙΟΠΛ|ΑΖ|ΑΛΛΟΣΟΥΣ|ΑΣΟΥΣ)$/;
+
+if(exept24.test(w)) {
+  w = w + "ΟΥΜ";
+}   }
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>re = /^(.+?)(ΜΑΤΑ</td>
+      <td>ΜΑΤΩΝ</td>
+      <td>ΜΑΤΟΣ)$/;</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>re2 = /^(.+?)(Α</td>
+      <td>ΑΓΑΤΕ</td>
+      <td>ΑΓΑΝ</td>
+      <td>ΑΕΙ</td>
+      <td>ΑΜΑΙ</td>
+      <td>ΑΝ</td>
+      <td>ΑΣ</td>
+      <td>ΑΣΑΙ</td>
+      <td>ΑΤΑΙ</td>
+      <td>ΑΩ</td>
+      <td>Ε</td>
+      <td>ΕΙ</td>
+      <td>ΕΙΣ</td>
+      <td>ΕΙΤΕ</td>
+      <td>ΕΣΑΙ</td>
+      <td>ΕΣ</td>
+      <td>ΕΤΑΙ</td>
+      <td>Ι</td>
+      <td>ΙΕΜΑΙ</td>
+      <td>ΙΕΜΑΣΤΕ</td>
+      <td>ΙΕΤΑΙ</td>
+      <td>ΙΕΣΑΙ</td>
+      <td>ΙΕΣΑΣΤΕ</td>
+      <td>ΙΟΜΑΣΤΑΝ</td>
+      <td>ΙΟΜΟΥΝ</td>
+      <td>ΙΟΜΟΥΝΑ</td>
+      <td>ΙΟΝΤΑΝ</td>
+      <td>ΙΟΝΤΟΥΣΑΝ</td>
+      <td>ΙΟΣΑΣΤΑΝ</td>
+      <td>ΙΟΣΑΣΤΕ</td>
+      <td>ΙΟΣΟΥΝ</td>
+      <td>ΙΟΣΟΥΝΑ</td>
+      <td>ΙΟΤΑΝ</td>
+      <td>ΙΟΥΜΑ</td>
+      <td>ΙΟΥΜΑΣΤΕ</td>
+      <td>ΙΟΥΝΤΑΙ</td>
+      <td>ΙΟΥΝΤΑΝ</td>
+      <td>Η</td>
+      <td>ΗΔΕΣ</td>
+      <td>ΗΔΩΝ</td>
+      <td>ΗΘΕΙ</td>
+      <td>ΗΘΕΙΣ</td>
+      <td>ΗΘΕΙΤΕ</td>
+      <td>ΗΘΗΚΑΤΕ</td>
+      <td>ΗΘΗΚΑΝ</td>
+      <td>ΗΘΟΥΝ</td>
+      <td>ΗΘΩ</td>
+      <td>ΗΚΑΤΕ</td>
+      <td>ΗΚΑΝ</td>
+      <td>ΗΣ</td>
+      <td>ΗΣΑΝ</td>
+      <td>ΗΣΑΤΕ</td>
+      <td>ΗΣΕΙ</td>
+      <td>ΗΣΕΣ</td>
+      <td>ΗΣΟΥΝ</td>
+      <td>ΗΣΩ</td>
+      <td>Ο</td>
+      <td>ΟΙ</td>
+      <td>ΟΜΑΙ</td>
+      <td>ΟΜΑΣΤΑΝ</td>
+      <td>ΟΜΟΥΝ</td>
+      <td>ΟΜΟΥΝΑ</td>
+      <td>ΟΝΤΑΙ</td>
+      <td>ΟΝΤΑΝ</td>
+      <td>ΟΝΤΟΥΣΑΝ</td>
+      <td>ΟΣ</td>
+      <td>ΟΣΑΣΤΑΝ</td>
+      <td>ΟΣΑΣΤΕ</td>
+      <td>ΟΣΟΥΝ</td>
+      <td>ΟΣΟΥΝΑ</td>
+      <td>ΟΤΑΝ</td>
+      <td>ΟΥ</td>
+      <td>ΟΥΜΑΙ</td>
+      <td>ΟΥΜΑΣΤΕ</td>
+      <td>ΟΥΝ</td>
+      <td>ΟΥΝΤΑΙ</td>
+      <td>ΟΥΝΤΑΝ</td>
+      <td>ΟΥΣ</td>
+      <td>ΟΥΣΑΝ</td>
+      <td>ΟΥΣΑΤΕ</td>
+      <td>Υ</td>
+      <td>ΥΣ</td>
+      <td>Ω</td>
+      <td>ΩΝ)$/;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>if(re.test(w)) {
+    var fp = re.exec(w);
+    stem = fp[1];
+    w = stem + “ΜΑ”;
+  }</p>
+
+<p>if((re2.test(w)) &amp;&amp; (test1)) {
+    var fp = re2.exec(w);
+    stem = fp[1];
+    w = stem;</p>
+
+<p>}</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>re = /^(.+?)(ΕΣΤΕΡ</td>
+      <td>ΕΣΤΑΤ</td>
+      <td>ΟΤΕΡ</td>
+      <td>ΟΤΑΤ</td>
+      <td>ΥΤΕΡ</td>
+      <td>ΥΤΑΤ</td>
+      <td>ΩΤΕΡ</td>
+      <td>ΩΤΑΤ)$/;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>if(re.test(w)) {
+    var fp = re.exec(w);
+    stem = fp[1];
+    w = stem;
+  }</p>
+
+<p>return w;
+};</p>
+
+<p>var greekStemmer = function (token) {
+  return token.update(function (word) {
+    return stemWord(word);
+  })
+}</p>
+
+<p>var idx = lunr(function () {
+  this.field(‘title’)
+  this.field(‘excerpt’)
+  this.field(‘categories’)
+  this.field(‘tags’)
+  this.ref(‘id’)</p>
+
+<p>this.pipeline.remove(lunr.trimmer)
+  this.pipeline.add(greekStemmer)
+  this.pipeline.remove(lunr.stemmer)</p>
+
+<p>for (var item in store) {
+    this.add({
+      title: store[item].title,
+      excerpt: store[item].excerpt,
+      categories: store[item].categories,
+      tags: store[item].tags,
+      id: item
+    })
+  }
+});</p>
+
+<p>$(document).ready(function() {
+  $(‘input#search’).on(‘keyup’, function () {
+    var resultdiv = $(‘#results’);
+    var query = $(this).val().toLowerCase();
+    var result =
+      idx.query(function (q) {
+        query.split(lunr.tokenizer.separator).forEach(function (term) {
+          q.term(term, { boost: 100 })
+          if(query.lastIndexOf(“ “) != query.length-1){
+            q.term(term, { usePipeline: false, wildcard: lunr.Query.wildcard.TRAILING, boost: 10 })
+          }
+          if (term != “”){
+            q.term(term, { usePipeline: false, editDistance: 1, boost: 1 })
+          }
+        })
+      });
+    resultdiv.empty();
+    resultdiv.prepend(‘&lt;p class="results__found"&gt;‘+result.length+’ Result(s) found&lt;/p&gt;’);
+    for (var item in result) {
+      var ref = result[item].ref;
+      if(store[ref].teaser){
+        var searchitem =
+          ‘&lt;div class="list__item"&gt;’+
+            ‘&lt;article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork"&gt;’+
+              ‘&lt;h2 class="archive__item-title" itemprop="headline"&gt;’+
+                ‘<a href="'+store[ref].url+'" rel="permalink">‘+store[ref].title+’</a>’+
+              ‘&lt;/h2&gt;’+
+              ‘&lt;div class="archive__item-teaser"&gt;’+
+                ‘<img src="'+store[ref].teaser+'" alt="" />’+
+              ‘&lt;/div&gt;’+
+              ‘&lt;p class="archive__item-excerpt" itemprop="description"&gt;‘+store[ref].excerpt.split(“ “).splice(0,20).join(“ “)+’…&lt;/p&gt;’+
+            ‘&lt;/article&gt;’+
+          ‘&lt;/div&gt;’;
+      }
+      else{
+    	  var searchitem =
+          ‘&lt;div class="list__item"&gt;’+
+            ‘&lt;article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork"&gt;’+
+              ‘&lt;h2 class="archive__item-title" itemprop="headline"&gt;’+
+                ‘<a href="'+store[ref].url+'" rel="permalink">‘+store[ref].title+’</a>’+
+              ‘&lt;/h2&gt;’+
+              ‘&lt;p class="archive__item-excerpt" itemprop="description"&gt;‘+store[ref].excerpt.split(“ “).splice(0,20).join(“ “)+’…&lt;/p&gt;’+
+            ‘&lt;/article&gt;’+
+          ‘&lt;/div&gt;’;
+      }
+      resultdiv.append(searchitem);
+    }
+  });
+});</p>
+:ET

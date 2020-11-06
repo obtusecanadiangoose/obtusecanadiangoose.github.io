@@ -1,12 +1,11 @@
 ---
 date:   2020-11-04 20:21:33 -0400
 categories: projects
-title: "Valorant Aimbot [Proof Of Concept]"
+title: "Valorant Aimbot post [Proof Of Concept]"
 excerpt: "Undetectable aimbot using opencv and a raspberrypi0"
 header:
-  #image: /assets/images/valorant-aimbot-header-thin.png
   overlay_image: /assets/images/valorant-aimbot-header.png
-  teaser: assets/images/valorant-aimbot-header.png
+  teaser: assets/images/valorant-aimbot-header-thin.png
   actions:
     - label: "View on github"
       url: "https://github.com"

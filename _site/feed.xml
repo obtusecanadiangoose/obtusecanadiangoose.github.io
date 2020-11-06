@@ -1,26 +1,79 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-05T17:43:07-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">The Obtuse Canadian Goose</title><subtitle>An amazing website.</subtitle><author><name>Liam Ogilvie</name></author><entry><title type="html">Valorant Aimbot [Proof Of Concept]</title><link href="http://localhost:4000/projects/valorant-aimbot/" rel="alternate" type="text/html" title="Valorant Aimbot [Proof Of Concept]" /><published>2020-11-04T19:21:33-05:00</published><updated>2020-11-04T19:21:33-05:00</updated><id>http://localhost:4000/projects/valorant-aimbot</id><content type="html" xml:base="http://localhost:4000/projects/valorant-aimbot/">&lt;p&gt;These are some headers:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-05T19:38:16-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">The Obtuse Canadian Goose</title><subtitle>An amazing website.</subtitle><author><name>Liam Ogilvie</name></author><entry><title type="html">Valorant Aimbot [Proof Of Concept]</title><link href="http://localhost:4000/projects/valorant-aimbot/" rel="alternate" type="text/html" title="Valorant Aimbot [Proof Of Concept]" /><published>2020-11-04T19:21:33-05:00</published><updated>2020-11-04T19:21:33-05:00</updated><id>http://localhost:4000/projects/valorant-aimbot</id><content type="html" xml:base="http://localhost:4000/projects/valorant-aimbot/">&lt;p&gt;Is it perfect? No.&lt;/p&gt;
 
-&lt;h1 id=&quot;h1&quot;&gt;H1&lt;/h1&gt;
-&lt;h2 id=&quot;h2&quot;&gt;H2&lt;/h2&gt;
-&lt;h3 id=&quot;h3&quot;&gt;H3&lt;/h3&gt;
-&lt;h4 id=&quot;h4&quot;&gt;H4&lt;/h4&gt;
-&lt;h5 id=&quot;h5&quot;&gt;H5&lt;/h5&gt;
-&lt;h6 id=&quot;h6&quot;&gt;H6&lt;/h6&gt;
+&lt;p&gt;Does it work? Sometimes.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;This text is bold&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Do I trust this more than I trust my own aiming skills? Absolutely Not.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;This text is italic&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;general-concept&quot;&gt;General Concept:&lt;/h2&gt;
+&lt;p&gt;The program is broken up into roughly 3 steps:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;How about some bold italic&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Mss takes a 250 x 250 screenshot of the area around the crosshair&lt;/li&gt;
+  &lt;li&gt;Opencv uses thresholding, masking and contouring to draw bounding boxes and estimate the location of the head&lt;/li&gt;
+  &lt;li&gt;The relative position of the head is send to the raspberrypi that is acting as a HID mouse&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;This is a link to &lt;a href=&quot;https://google.ca&quot;&gt;Google&lt;/a&gt; that I can link down below&lt;/p&gt;
+&lt;h2 id=&quot;can-you-get-banned&quot;&gt;Can you get banned?&lt;/h2&gt;
+&lt;p&gt;No, since it does not affect Valorant in any way, and interfaces with it in a way that looks legitimate (the rpi0 is indistinguishable from a normal mouse) 
+it is undetectable and therefore, you can’t get banned. 
+It uses the same information that is available to a player, however the program is able to process it faster and more precisely&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://4.bp.blogspot.com/-W-Q7_l1OoxY/UWAJSrtvn_I/AAAAAAAASVM/eMqye-hpAu4/s1600/world-s-cutest-kitten.jpg&quot; alt=&quot;This&quot; /&gt; is the #1 result for “cute cat” on google images&lt;/p&gt;
+&lt;h2 id=&quot;how-it-works&quot;&gt;How it Works:&lt;/h2&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;This is in a code snippet&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;This is the raw input that the player sees, mss is able to screenshot at ~30fps.&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;This is a larger block of python code:&lt;/p&gt;
+&lt;figure style=&quot;width: 248px&quot; class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;http://localhost:4000/assets/images/VA-raw.png&quot; alt=&quot;&quot; /&gt;
+&lt;/figure&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hi, &quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;user&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>Liam Ogilvie</name></author><category term="projects" /><summary type="html">Undetectable aimbot using opencv and a raspberrypi0</summary></entry></feed>
+&lt;ol&gt;
+  &lt;li&gt;This is the first and most important masking pass, it cuts out all other colours except for a very particular shade of purple, after the inital mask, some slight thresholding is done to 
+improve the contouring, and allow the contouring to accurately identify enemy players.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure style=&quot;width: 248px&quot; class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;http://localhost:4000/assets/images/VA-masked.png&quot; alt=&quot;&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;While this is just basic contouring to find all connected edges, it is helped by thresholding and masking.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure style=&quot;width: 248px&quot; class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;http://localhost:4000/assets/images/VA-contoured.png&quot; alt=&quot;&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;A bounding box is drawn around all the contours, and the largest one (which is &lt;em&gt;usually&lt;/em&gt; an enemy player) is identified. The head is found by taking the width of the box // 2
+and the height of the box // 8. It’s not exact, but it does the job in most scenarios.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure style=&quot;width: 248px&quot; class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;http://localhost:4000/assets/images/VA-head.png&quot; alt=&quot;&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;All 4 components in action:&lt;/p&gt;
+
+&lt;figure style=&quot;width: 130px&quot; class=&quot;align-left&quot;&gt;
+  &lt;img src=&quot;http://localhost:4000/assets/images/VA-raw.gif&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;1. Raw Input&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure style=&quot;width: 130px&quot; class=&quot;align-left&quot;&gt;
+  &lt;img src=&quot;http://localhost:4000/assets/images/VA-masked.gif&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;2. Masked&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure style=&quot;width: 130px&quot; class=&quot;align-left&quot;&gt;
+  &lt;img src=&quot;http://localhost:4000/assets/images/VA-contoured.gif&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;3. Contours&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure style=&quot;width: 130px&quot; class=&quot;align-left&quot;&gt;
+  &lt;img src=&quot;http://localhost:4000/assets/images/VA-head.gif&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;4. Estimated head location&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The regular head location (the red dot) is then sent to the raspberrypi along with a “left-click” command.&lt;/p&gt;
+
+&lt;h2 id=&quot;demo-montage&quot;&gt;Demo Montage:&lt;/h2&gt;
+&lt;p&gt;[&lt;em&gt;Coming Soon&lt;/em&gt;]&lt;/p&gt;</content><author><name>Liam Ogilvie</name></author><category term="projects" /><summary type="html">Undetectable aimbot using opencv and a raspberrypi0</summary></entry></feed>
