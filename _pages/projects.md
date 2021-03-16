@@ -7,4 +7,4 @@ entries_layout: grid
 classes: wide
 ---
 
-All of the finished and ongoing projects I work on can be found here.
+All of my finished and ongoing projects can be found here.

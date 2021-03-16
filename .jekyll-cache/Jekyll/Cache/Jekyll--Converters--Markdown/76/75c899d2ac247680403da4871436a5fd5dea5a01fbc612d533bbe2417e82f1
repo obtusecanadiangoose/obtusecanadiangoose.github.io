@@ -1,9 +1,0 @@
-I""<p>{% assign entries_layout = page.entries_layout | default: ‘list’ %}</p>
-<section class="taxonomy__section">
-  <div class="entries-{{ entries_layout }}">
-    {% for post in site.pages %}
-      {% include archive-single.html type=entries_layout %}
-    {% endfor %}
-  </div>
-</section>
-:ET

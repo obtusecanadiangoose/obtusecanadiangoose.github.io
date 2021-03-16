@@ -71,7 +71,7 @@ social:
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
     - https://twitter.com/
-    - https://github.com/
+    - https://github.com/obtusecanadiangoose
 
 # Analytics
 analytics:
@@ -90,15 +90,15 @@ author:
     #- label: "website"
     #  icon: "fas fa-fw fa-link"
     #  url: "obtusecanadiangoose.github.io"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    #- label: "Twitter"
+    #  icon: "fab fa-fw fa-twitter-square"
+    #  url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/obtusecanadiangoose"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://www.instagram.com/ogilvieliam/"
 
 
 # Site Footer

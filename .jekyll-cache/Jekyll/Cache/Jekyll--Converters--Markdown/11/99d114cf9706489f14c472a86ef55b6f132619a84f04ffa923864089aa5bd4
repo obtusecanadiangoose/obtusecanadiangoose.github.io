@@ -1,10 +1,11 @@
-I"jW<p>A list of all the posts and pages found on the site. For you robots out there is an <a href="/sitemap.xml">XML version</a> available for digesting as well.</p>
+I"ÌQ<p>A list of all the posts and pages found on the site. For you robots out there is an <a href="/sitemap.xml">XML version</a> available for digesting as well.</p>
 
 <h2>Pages</h2>
 
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/404.html" rel="permalink">Page Not Found</a>
@@ -18,9 +19,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/archive-layout-with-content/" rel="permalink">Archive Layout with Content</a>
@@ -33,9 +38,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/categories-grid/" rel="permalink">Posts by Category (grid view)</a>
@@ -48,9 +57,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/categories/" rel="permalink">Posts by Category</a>
@@ -63,9 +76,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/collection-archive-grid/" rel="permalink">Posts by Collection (grid view)</a>
@@ -78,9 +95,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/collection-archive/" rel="permalink">Posts by Collection</a>
@@ -93,9 +114,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/categories/edge-case-grid/" rel="permalink">Edge Case (grid view)</a>
@@ -108,9 +133,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/categories/edge-case/" rel="permalink">Edge Case</a>
@@ -123,9 +152,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/" rel="permalink"></a>
@@ -138,12 +171,16 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/index.html.bak" rel="permalink"></a>
+        <a href="/about/" rel="permalink"></a>
       
     </h2>
     
@@ -153,9 +190,32 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/" rel="permalink"></a>
+      
+    </h2>
+    
+
+
+    
+  </article>
+</div>
+
+<!--    
+	-->
+
+<div class="list__item">
+  <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
+    
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/lorem-ipsum/" rel="permalink">Lorem Ipsum</a>
@@ -168,9 +228,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/assets/js/lunr/lunr-en.js" rel="permalink"></a>
@@ -183,9 +247,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/assets/js/lunr/lunr-gr.js" rel="permalink"></a>
@@ -198,9 +266,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/assets/js/lunr/lunr-store.js" rel="permalink"></a>
@@ -213,9 +285,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/assets/css/main.css" rel="permalink"></a>
@@ -228,9 +304,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/tags/markup-grid/" rel="permalink">Markup (grid view)</a>
@@ -243,9 +323,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/tags/markup/" rel="permalink">Markup</a>
@@ -258,9 +342,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/music/" rel="permalink">Music</a>
@@ -273,9 +361,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/page-a/" rel="permalink">Page A</a>
@@ -288,9 +380,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/page-archive-grid/" rel="permalink">Page Archive</a>
@@ -303,9 +399,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/page-archive/" rel="permalink">Page Archive</a>
@@ -318,9 +418,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/page-b/" rel="permalink">Page B</a>
@@ -333,9 +437,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/photography/" rel="permalink">Photography</a>
@@ -348,9 +456,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/projects/" rel="permalink">Projects</a>
@@ -363,9 +475,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/recipes-archive/" rel="permalink">Recipes</a>
@@ -378,9 +494,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/sample-page/" rel="permalink">Sample Page</a>
@@ -393,9 +513,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/search/" rel="permalink">Search</a>
@@ -408,9 +532,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/sitemap/" rel="permalink">Sitemap</a>
@@ -423,9 +551,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/splash-page/" rel="permalink">Splash Page</a>
@@ -439,9 +571,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/tags-grid/" rel="permalink">Posts by Tag (grid view)</a>
@@ -454,9 +590,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/tags/" rel="permalink">Posts by Tag</a>
@@ -469,9 +609,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/terms/" rel="permalink">Terms and Privacy Policy</a>
@@ -484,9 +628,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/year-archive-grid/" rel="permalink">Posts by Year (grid view)</a>
@@ -499,9 +647,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/year-archive/" rel="permalink">Posts by Year</a>
@@ -514,9 +666,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/sitemap.xml" rel="permalink"></a>
@@ -529,9 +685,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/robots.txt" rel="permalink"></a>
@@ -544,9 +704,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/feed.xml" rel="permalink"></a>
@@ -559,9 +723,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/assets/css/main.css.map" rel="permalink"></a>
@@ -574,11 +742,15 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <h2>Posts</h2>
 
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/projects/valorant-aimbot/" rel="permalink">Valorant Aimbot [Proof Of Concept]
@@ -611,46 +783,15 @@
   </article>
 </div>
 
-<div class="list__item">
-  <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/baz-boom-identity/" rel="permalink">Baz Boom Identity
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Baz Boom design system including logo mark, website design, and branding applications.
-</p>
-  </article>
-</div>
+<!--    
+	-->
 
 <h2>music</h2>
 
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/music/baz-boom-identity/" rel="permalink">Baz Boom Identity
@@ -665,9 +806,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/music/fizz-bang-identity/" rel="permalink">Fizz Bang Identity
@@ -682,9 +827,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/music/foo-bar-website/" rel="permalink">Foo Bar Identity
@@ -699,9 +848,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/music/ginger-gulp-identity/" rel="permalink">Ginger Gulp Identity
@@ -716,11 +869,15 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <h2>pets</h2>
 
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/pets/lhasa-apso/" rel="permalink">Lhasa Apso
@@ -735,9 +892,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/pets/tabby/" rel="permalink">Tabby
@@ -751,11 +912,15 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <h2>photography</h2>
 
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/photography/baz-boom-identity/" rel="permalink">Baz Boom Identity
@@ -770,9 +935,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/photography/fizz-bang-identity/" rel="permalink">Fizz Bang Identity
@@ -787,9 +956,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/photography/foo-bar-website/" rel="permalink">Foo Bar Identity
@@ -804,9 +977,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/photography/ginger-gulp-identity/" rel="permalink">Ginger Gulp Identity
@@ -821,82 +998,18 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <h2>projects</h2>
 
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/projects/baz-boom-identity/" rel="permalink">Baz Boom Identity
-</a>
-      
-    </h2>
-    
-
-
-    <p class="archive__item-excerpt" itemprop="description">Baz Boom design system including logo mark, website design, and branding applications.
-</p>
-  </article>
-</div>
-
-<div class="list__item">
-  <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/projects/fizz-bang-identity/" rel="permalink">Fizz Bang Identity
-</a>
-      
-    </h2>
-    
-
-
-    <p class="archive__item-excerpt" itemprop="description">Fizz Bang design system including logo mark, website design, and branding applications.
-</p>
-  </article>
-</div>
-
-<div class="list__item">
-  <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/projects/foo-bar-website/" rel="permalink">Foo Bar Identity
-</a>
-      
-    </h2>
-    
-
-
-    <p class="archive__item-excerpt" itemprop="description">Foo Bar design system including logo mark, website design, and branding applications.
-</p>
-  </article>
-</div>
-
-<div class="list__item">
-  <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/projects/ginger-gulp-identity/" rel="permalink">Ginger Gulp Identity
-</a>
-      
-    </h2>
-    
-
-
-    <p class="archive__item-excerpt" itemprop="description">Ginger Gulp design system including logo mark, website design, and branding applications.
-</p>
-  </article>
-</div>
-
-<div class="list__item">
-  <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/projects/valorant-aimbot/" rel="permalink">Valorant Aimbot [Proof Of Concept]
+        <a href="/projects/valorant-aimbot/" rel="permalink">Valorant Aimbot post [Proof Of Concept]
 </a>
       
     </h2>
@@ -908,11 +1021,15 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <h2>recipes</h2>
 
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/recipes/chocolate-chip-cookies/" rel="permalink">Chocolate Chip Cookies
@@ -927,9 +1044,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/recipes/oatmeal-cookies/" rel="permalink">Oatmeal Cookies
@@ -944,9 +1065,13 @@
   </article>
 </div>
 
+<!--    
+	-->
+
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
+	
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/recipes/peanut-butter-cookies/" rel="permalink">Peanut Butter Cookies
@@ -959,5 +1084,8 @@
     <p class="archive__item-excerpt" itemprop="description">A peanut butter cookie is a type of cookie that is distinguished for having peanut butter as a principal ingredient. The cookie generally originated in the U...</p>
   </article>
 </div>
+
+<!--    
+	-->
 
 :ET
