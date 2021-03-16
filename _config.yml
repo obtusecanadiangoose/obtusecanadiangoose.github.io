@@ -83,7 +83,7 @@ analytics:
 # Site Author
 author:
   name             : "Liam Ogilvie"
-  avatar           : #"/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio-photo.jpg"
   bio              : "Second year student at the University of Toronto studying Economics and Computer Science"
   location         : "Toronto, ON"
   links:
