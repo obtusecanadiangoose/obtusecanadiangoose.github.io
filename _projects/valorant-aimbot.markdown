@@ -8,7 +8,7 @@ header:
   teaser: assets/images/valorant-aimbot-header-thin.png
   actions:
     - label: "View on github"
-      url: "https://github.com"
+      url: "https://github.com/obtusecanadiangoose/valorant-aimbot"
 sidebar:
   - title: "Goals:"
   - text: "Find enemy head"
