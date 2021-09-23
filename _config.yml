@@ -84,7 +84,7 @@ analytics:
 author:
   name             : "Liam Ogilvie"
   avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "Second year student at the University of Toronto studying Economics and Computer Science"
+  bio              : "Third year student at the University of Toronto studying Computer Science and Economics"
   location         : "Toronto, ON"
   links:
     #- label: "website"
@@ -263,15 +263,15 @@ collections:
 # Defaults
 defaults:
   # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: false
-      read_time: true
-      share: true
-      related: true
+#  - scope:
+#      path: ""
+#      type: posts
+#    values:
+#      layout: single
+#      author_profile: false
+#      read_time: true
+#      share: true
+#      related: true
   # _pages
   - scope:
       path: "_pages"
