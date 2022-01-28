@@ -9,21 +9,19 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Sample Page - The Obtuse Canadian Goose</title>
+<!-- begin _includes/seo.html --><title>The Obtuse Canadian Goose</title>
 <meta name="description" content="An amazing website.">
 
 
   <meta name="author" content="Liam Ogilvie">
   
-  <meta property="article:author" content="Liam Ogilvie">
-  
 
 
-<meta property="og:type" content="article">
+<meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="The Obtuse Canadian Goose">
-<meta property="og:title" content="Sample Page">
-<meta property="og:url" content="http://localhost:4000/sample-page/">
+<meta property="og:title" content="The Obtuse Canadian Goose">
+<meta property="og:url" content="http://localhost:4000/about/.bak">
 
 
   <meta property="og:description" content="An amazing website.">
@@ -35,9 +33,9 @@
 
 
   <meta name="twitter:site" content="@mmistakes">
-  <meta name="twitter:title" content="Sample Page">
+  <meta name="twitter:title" content="The Obtuse Canadian Goose">
   <meta name="twitter:description" content="An amazing website.">
-  <meta name="twitter:url" content="http://localhost:4000/sample-page/">
+  <meta name="twitter:url" content="http://localhost:4000/about/.bak">
 
   
     <meta name="twitter:card" content="summary">
@@ -50,8 +48,6 @@
 
 
 
-  <meta property="article:published_time" content="2016-02-23T22:02:20-05:00">
-
 
 
 
@@ -61,7 +57,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/sample-page/">
+<link rel="canonical" href="http://localhost:4000/about/.bak">
 
 
 
@@ -124,7 +120,7 @@
 
   </head>
 
-  <body class="layout--single">
+  <body class="layout--single wide">
     <nav class="skip-links">
   <h2 class="screen-reader-text">Skip links</h2>
   <ul>
@@ -294,16 +290,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Sample Page">
     
-    <meta itemprop="datePublished" content="2016-02-23T22:02:20-05:00">
+    
+    
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Sample Page
-</h1>
+          
           
 
 
@@ -312,19 +307,11 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>This is an example page. It’s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:</p>
-
-<blockquote>
-  <p>Hi there! I’m a bike messenger by day, aspiring actor by night, and this is my website. I live in Los Angeles, have a great dog named Jack, and I like pi’a coladas. (And gettin’ caught in the rain.)</p>
-</blockquote>
-
-<p>…or something like this:</p>
-
-<blockquote>
-  <p>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</p>
-</blockquote>
-
-<p>You should probably delete this page and create new pages for your content. Have fun!</p>
+        <h2 id="hello-">Hello!</h2>
+<p>I&#39;m Liam, a third-year Computer Science and Economics student at the University of Toronto.</p>
+<p>In the past, I have worked on projects utilizing computer vision and colour/shape detection, hardware emulation, and networking technology, as well as recursive pathfinding algorithms and full-stack applications. You can find write ups on the most interesting ones here.</p>
+<p>I have experience creating application dashboards and administrative consoles in Plotly Dash, implementing SQL databases into existing software, and automating the real world with computer vision.</p>
+<p>Outside of coding, I enjoy running along Lake Ontario, photographing the world around me, and expressing myself through electronic music. Of which, you can also find on this site</p>
 
         
       </section>
@@ -335,8 +322,6 @@
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2016-02-23T22:02:20-05:00">February 24, 2016</time></p>
-
 
       </footer>
 

@@ -6,10 +6,10 @@ main:
 #    url: /year-archive/
   - title: "Projects"
     url: /projects/
-#  - title: "Photography"
-#    url: /photography/
-#  - title: "Music"
-#    url: /music/
+  - title: "Photography"
+    url: /photography/
+  - title: "Music"
+    url: /music/
 
 # sidebar navigation list sample
 sidebar-sample:
