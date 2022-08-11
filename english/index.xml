@@ -1,1 +1,75 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Englishes on Liam Ogilvie | The Obtuse Canadian Goose</title><link>obtusecanadiangoose.github.io/english/</link><description>Recent content in Englishes on Liam Ogilvie | The Obtuse Canadian Goose</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Copyright &amp;copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com), modified by Liam Ogilvie</copyright><lastBuildDate>Tue, 12 May 2020 12:14:34 +0600</lastBuildDate><atom:link href="obtusecanadiangoose.github.io/english/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>obtusecanadiangoose.github.io/english/funfacts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>obtusecanadiangoose.github.io/english/funfacts/</guid><description/></item><item><title>I'm Somrat Sorkar</title><link>obtusecanadiangoose.github.io/english/banner/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>obtusecanadiangoose.github.io/english/banner/</guid><description/></item><item><title>KNOW MORE &lt;br> ABOUT ME</title><link>obtusecanadiangoose.github.io/english/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>obtusecanadiangoose.github.io/english/about/</guid><description>It&amp;rsquo;s Somrat, Professional Web Developer. I love to write code, it&amp;rsquo;s my passoin.</description></item><item><title>NEED A SERVICE?</title><link>obtusecanadiangoose.github.io/english/call-to-action/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>obtusecanadiangoose.github.io/english/call-to-action/</guid><description/></item><item><title>SAY HELLO!</title><link>obtusecanadiangoose.github.io/english/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>obtusecanadiangoose.github.io/english/contact/</guid><description/></item><item><title>SERVICES</title><link>obtusecanadiangoose.github.io/english/service/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>obtusecanadiangoose.github.io/english/service/</guid><description/></item><item><title>TESTIMONIALS</title><link>obtusecanadiangoose.github.io/english/testimonial/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>obtusecanadiangoose.github.io/english/testimonial/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Englishes on Liam Ogilvie | The Obtuse Canadian Goose</title>
+    <link>obtusecanadiangoose.github.io/english/</link>
+    <description>Recent content in Englishes on Liam Ogilvie | The Obtuse Canadian Goose</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com), modified by Liam Ogilvie</copyright>
+    <lastBuildDate>Tue, 12 May 2020 12:14:34 +0600</lastBuildDate><atom:link href="obtusecanadiangoose.github.io/english/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>obtusecanadiangoose.github.io/english/funfacts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>obtusecanadiangoose.github.io/english/funfacts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>I&#39;m Somrat Sorkar</title>
+      <link>obtusecanadiangoose.github.io/english/banner/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>obtusecanadiangoose.github.io/english/banner/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>KNOW MORE &lt;br&gt; ABOUT ME</title>
+      <link>obtusecanadiangoose.github.io/english/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>obtusecanadiangoose.github.io/english/about/</guid>
+      <description>It&amp;rsquo;s Somrat, Professional Web Developer. I love to write code, it&amp;rsquo;s my passoin.</description>
+    </item>
+    
+    <item>
+      <title>NEED A SERVICE?</title>
+      <link>obtusecanadiangoose.github.io/english/call-to-action/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>obtusecanadiangoose.github.io/english/call-to-action/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SAY HELLO!</title>
+      <link>obtusecanadiangoose.github.io/english/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>obtusecanadiangoose.github.io/english/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SERVICES</title>
+      <link>obtusecanadiangoose.github.io/english/service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>obtusecanadiangoose.github.io/english/service/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TESTIMONIALS</title>
+      <link>obtusecanadiangoose.github.io/english/testimonial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>obtusecanadiangoose.github.io/english/testimonial/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
