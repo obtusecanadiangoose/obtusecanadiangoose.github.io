@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "obtusecanadiangoose.github.io"
+baseURL = "https://obtusecanadiangoose.github.io"
 title = "Liam Ogilvie | The Obtuse Canadian Goose"
 theme = "somrat"
 # post pagination
