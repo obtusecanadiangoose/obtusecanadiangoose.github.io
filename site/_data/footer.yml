@@ -4,12 +4,10 @@ footer_menu__settings:
       url: '/'
     - title: 'Projects'
       url: '/projects/'
-    - title: 'Elements'
-      url: '/elements/'
+    - title: 'Posts'
+      url: '/posts/'
     - title: 'About'
       url: '/about/'
-    - title: 'Blog'
-      url: '/blog/'
 
 copyright_text_html: >-
-  <p> 2021 &copy; <a href="/">Vonge</a>. Template by <a href="https://cloudcannon.com/">CloudCannon</a>.</p>
+  <p> 2025 &copy; <a href="/">Liam Ogilvie</a>. Adapted from a template by <a href="https://cloudcannon.com/">CloudCannon</a>.</p>

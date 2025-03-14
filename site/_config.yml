@@ -1,4 +1,4 @@
-title: Vonge
+title: Liam Ogilvie | The Obtuse Canadian Goose
 
 plugins:
   - jekyll-bookshop
@@ -30,7 +30,7 @@ collections:
     output: false
   posts:
     output: true
-    permalink: /blog/:slug
+    permalink: /posts/:slug
 
 defaults:
   - scope:
