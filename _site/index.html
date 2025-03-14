@@ -1,440 +1,827 @@
-<!doctype html>
-<!--
-  Minimal Mistakes Jekyll Theme 4.20.2 by Michael Rose
-  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
-  Free for personal and commercial use under the MIT license
-  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
--->
-<html lang="en" class="no-js">
-  <head>
-    <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- begin _includes/seo.html --><title>The Obtuse Canadian Goose</title>
-<meta name="description" content="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <title>Vonge</title>
+  <meta name='description' content='Vonge is a portfolio site template for Jekyll'>
 
-  <meta name="author" content="Liam Ogilvie">
-  
+  <link rel="canonical" href="http://localhost:6060/">
 
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vonge">
+  <meta name="twitter:description" content="Vonge is a portfolio site template for Jekyll">
+  <meta name="twitter:image:src" content="http://localhost:6060/images/01.jpg">
 
-<meta property="og:type" content="website">
-<meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="The Obtuse Canadian Goose">
-<meta property="og:title" content="The Obtuse Canadian Goose">
-<meta property="og:url" content="http://localhost:4000/">
+  <!-- Facebook OpenGraph -->
+  <meta property="og:title" content="Vonge">
+  <meta property="og:description" content="Vonge is a portfolio site template for Jekyll">
+  <meta property="og:image" content="http://localhost:6060/images/01.jpg">
 
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 
+  <!-- Ionicons -->
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="/assets/main.css">
+</head>
 
-  <meta property="og:image" content="http://localhost:4000/assets/images/bio-photo.jpg">
+<body>
 
-
-
-  <meta name="twitter:site" content="@mmistakes">
-  <meta name="twitter:title" content="The Obtuse Canadian Goose">
-  <meta name="twitter:description" content="">
-  <meta name="twitter:url" content="http://localhost:4000/">
-
-  
-    <meta name="twitter:card" content="summary">
     
-      <meta name="twitter:image" content="http://localhost:4000/assets/images/bio-photo.jpg">
+
+    <!-- begin header -->
+<header class="c-header">
+  <div class="container">
+    <div class="row">
+      <div class="c-header__inner">
+
+        <div class="logo">
+          <a class="logo__link" href="/">
+          
+            <img class="logo__image" src="/images/logo.svg" alt="Vonge">
+          
+          </a>
+        </div>
+
+        <nav class="main-nav">
+          <div class="main-nav__box">
+
+            <div class="nav__icon-close">
+              <i class="ion ion-md-close"></i>
+            </div>
+
+            <div class="nav__title">Menu</div>
+
+              <ul class="nav__list list-reset">
+
+              
+                
+                <li class="nav__item">
+                  <a href="/" class="nav__link active-link">Home</a>
+                </li>
+                
+              
+                
+                <li class="nav__item">
+                  <a href="/projects/" class="nav__link">Projects</a>
+                </li>
+                
+              
+                
+                <li class="nav__item">
+                  <a href="/blog/" class="nav__link">Blog</a>
+                </li>
+                
+              
+                
+                <li class="nav__item dropdown">
+                  <span class="nav__link dropdown-toggle">Pages <i class="ion ion-ios-arrow-down arrow-down"></i></span>
+                  <div class="dropdown-menu">
+                    
+                      <a href="/about/" class="nav__link">About</a>
+                    
+                      <a href="/elements/" class="nav__link">Elements</a>
+                    
+                  </div>
+                </li>
+
+                
+              
+
+            </ul>
+          </div>
+
+          <!--bookshop-live meta(version="3.9.0" baseurl="" title="Vonge") -->
+<!--bookshop-live name(social-link.jekyll.html) params() context() -->
+
+<div class="social">
+  <ul class="social__list list-reset">
     
-  
-
-  
-
-
-
-
-
-
-
-  
-
-  
-
-
-<link rel="canonical" href="http://localhost:4000/">
-
-
-
-
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
+    <li class="social__item">
+      <a class="social__link" href="https://twitter.com" target="_blank" rel="noopener" aria-label="twitter icon"><i class="ion ion-logo-twitter"></i></a>
+    </li>
     
-      "@type": "Person",
-      "name": "Liam Ogilvie",
-      "url": "http://localhost:4000/",
-      "sameAs": ["https://twitter.com/","https://github.com/obtusecanadiangoose"]
+    <li class="social__item">
+      <a class="social__link" href="https://github.com" target="_blank" rel="noopener" aria-label="github icon"><i class="ion ion-logo-github"></i></a>
+    </li>
     
-  }
-</script>
+    <li class="social__item">
+      <a class="social__link" href="https://pinterest.com" target="_blank" rel="noopener" aria-label="pinterest icon"><i class="ion ion-logo-pinterest"></i></a>
+    </li>
+    
+    <li class="social__item">
+      <a class="social__link" href="https://youtube.com" target="_blank" rel="noopener" aria-label="youtube icon"><i class="ion ion-logo-youtube"></i></a>
+    </li>
+    
+  </ul>
+</div>
+
+<!--bookshop-live end-->
+        </nav>
+
+        <div class="nav-button">
+          <i class="nav__icon nav__icon-menu ion ion-md-menu"></i>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+<!-- end header -->
+
+    
+
+    <!--
+        Bookshop components are accessed using the bookshop tag,
+        using the same syntax as the standard Jekyll include tag.
+    -->
+    <!--bookshop-live meta(version="3.9.0" baseurl="" title="Vonge") -->
+<!--bookshop-live name(page.jekyll.html) params(content_blocks=page.content_blocks page_theme=page.page_theme) context() -->
+
+<div class="c-page">
 
 
+    <!--bookshop-live name(hero/hero.jekyll.html) params(bind=block) context(block=content_blocks[0]) -->
+<!-- begin hero -->
 
+<section class="c-hero animate">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="c-hero__inner">
 
+          <div class="c-hero__left">
+            <h1 class="c-hero__title">Hi there, I am Vanessa Marley</h1>
+            <div class="c-hero__description"><p><strong>Photographer</strong> and <strong>Visual Content Strategist</strong> from Albany. I work as a lifestyle, product, and landscape photographer, creating images for a diverse range of requests, from online media to printed artwork.</p></div>
+            <div class="c-hero__btn">
+              <a href="#contact" class="cta-button c-button c-button--primary c-button--small">Get in touch</a>
+              <a class="works-button c-button c-button--secondary c-button--small" href="#projects">
+                <span class="circle-bg"><i class="ion ion-md-arrow-down button-arrow"></i></span> See my works
+              </a>
+            </div>
+          </div>
 
+          <div class="c-hero__right">
+            <div class="c-hero__image">
+              <img loading="lazy" src="/images/01.jpg" alt="">
+            </div>
+          </div>
 
-<!-- end _includes/seo.html -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end hero -->
+<!--bookshop-live end-->
 
+    <!--bookshop-live name(projects-section/projects-section.jekyll.html) params(bind=block) context(block=content_blocks[1]) -->
+<!-- begin projects -->
+<section class="section projects" id="projects">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="contaniner__inner animate">
 
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="The Obtuse Canadian Goose Feed">
+          <div class="section__info">
+            <div class="section__head">
+              <h2 class="section__title">Latest Works</h2>
+              <a class="section__link" href="/projects">View all <i class="ion ion-md-arrow-forward"></i></a>
+            </div>
+            <div class="section__description"><p>I show only my best works built completely with passion, simplicity, and creativity!</p></div>
+          </div>
 
-<!-- https://t.co/dKP3o1e -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+          
+          <div class="row">
+            
+              
+                <!--bookshop-live name(project-card/project-card.jekyll.html) params(project=project) context(project=site.projects[0]) -->
+
+<article class="c-project-card col col-4 col-d-6 col-t-12">
+  <div class="c-project-card__content">
+    <a href="/project/green-plant" class="c-project-card__image">
+      <img loading="lazy" src="/images/project-9.jpg" alt="Green Plant">
+    </a>
+    <div class="c-project-card__info">
+      <div class="c-project-card__info-wrap">
+        <h3 class="c-project-card__title">Green Plant</h3>
+      </div>
+      <div class="c-project-card__info-wrap">
+        
+        <div class="c-project-card__subtitle">Photography</div>
+        
+      </div>
+    </div>
+  </div>
+</article>
+<!--bookshop-live end-->
+              
+            
+              
+                <!--bookshop-live name(project-card/project-card.jekyll.html) params(project=project) context(project=site.projects[1]) -->
+
+<article class="c-project-card col col-4 col-d-6 col-t-12">
+  <div class="c-project-card__content">
+    <a href="/project/antelope-anyon" class="c-project-card__image">
+      <img loading="lazy" src="/images/project-8.jpg" alt="Antelope Canyon">
+    </a>
+    <div class="c-project-card__info">
+      <div class="c-project-card__info-wrap">
+        <h3 class="c-project-card__title">Antelope Canyon</h3>
+      </div>
+      <div class="c-project-card__info-wrap">
+        
+        <div class="c-project-card__subtitle">Photography</div>
+        
+      </div>
+    </div>
+  </div>
+</article>
+<!--bookshop-live end-->
+              
+            
+              
+                <!--bookshop-live name(project-card/project-card.jekyll.html) params(project=project) context(project=site.projects[2]) -->
+
+<article class="c-project-card col col-4 col-d-6 col-t-12">
+  <div class="c-project-card__content">
+    <a href="/project/quiet-lake" class="c-project-card__image">
+      <img loading="lazy" src="/images/project-7.jpg" alt="Quiet Lake">
+    </a>
+    <div class="c-project-card__info">
+      <div class="c-project-card__info-wrap">
+        <h3 class="c-project-card__title">Quiet Lake</h3>
+      </div>
+      <div class="c-project-card__info-wrap">
+        
+        <div class="c-project-card__subtitle">Photography</div>
+        
+      </div>
+    </div>
+  </div>
+</article>
+<!--bookshop-live end-->
+              
+            
+              
+                <!--bookshop-live name(project-card/project-card.jekyll.html) params(project=project) context(project=site.projects[3]) -->
+
+<article class="c-project-card col col-4 col-d-6 col-t-12">
+  <div class="c-project-card__content">
+    <a href="/project/the-rocks" class="c-project-card__image">
+      <img loading="lazy" src="/images/project-6.jpg" alt="The rocks">
+    </a>
+    <div class="c-project-card__info">
+      <div class="c-project-card__info-wrap">
+        <h3 class="c-project-card__title">The rocks</h3>
+      </div>
+      <div class="c-project-card__info-wrap">
+        
+        <div class="c-project-card__subtitle">Photography</div>
+        
+      </div>
+    </div>
+  </div>
+</article>
+<!--bookshop-live end-->
+              
+            
+              
+                <!--bookshop-live name(project-card/project-card.jekyll.html) params(project=project) context(project=site.projects[4]) -->
+
+<article class="c-project-card col col-4 col-d-6 col-t-12">
+  <div class="c-project-card__content">
+    <a href="/project/big-airplane" class="c-project-card__image">
+      <img loading="lazy" src="/images/project-5.jpg" alt="Big airplane">
+    </a>
+    <div class="c-project-card__info">
+      <div class="c-project-card__info-wrap">
+        <h3 class="c-project-card__title">Big airplane</h3>
+      </div>
+      <div class="c-project-card__info-wrap">
+        
+        <div class="c-project-card__subtitle">Photography</div>
+        
+      </div>
+    </div>
+  </div>
+</article>
+<!--bookshop-live end-->
+              
+            
+              
+                <!--bookshop-live name(project-card/project-card.jekyll.html) params(project=project) context(project=site.projects[5]) -->
+
+<article class="c-project-card col col-4 col-d-6 col-t-12">
+  <div class="c-project-card__content">
+    <a href="/project/mountains" class="c-project-card__image">
+      <img loading="lazy" src="/images/project-4.jpg" alt="Mountains">
+    </a>
+    <div class="c-project-card__info">
+      <div class="c-project-card__info-wrap">
+        <h3 class="c-project-card__title">Mountains</h3>
+      </div>
+      <div class="c-project-card__info-wrap">
+        
+        <div class="c-project-card__subtitle">Photography</div>
+        
+      </div>
+    </div>
+  </div>
+</article>
+<!--bookshop-live end-->
+              
+            
+              
+            
+              
+            
+              
+            
+          </div>
+          
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end projects -->
+<!--bookshop-live end-->
+
+    <!--bookshop-live name(testimonials-section/testimonials-section.jekyll.html) params(bind=block) context(block=content_blocks[2]) -->
+<!-- begin testimonials -->
+<section class="section testimonials animate">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+
+        <div class="section__info">
+          <div class="section__head">
+            <h2 class="section__title">Happy Clients</h2>
+            <ul class="controls list-reset" id="customize-controls" aria-label="Slider Navigation" tabindex="0">
+              <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+                <i class="ion ion-ios-arrow-back"></i>
+              </li>
+              <li class="next" data-controls="next" aria-controls="customize" tabindex="-1">
+                <i class="ion ion-ios-arrow-forward"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="section__description"></div>
+        </div>
+
+        
+        <div class="testimonials__slider my-slider">
+          
+            <!--bookshop-live name(testimonial-card/testimonial-card.jekyll.html) params(testimonial-item=testimonial-item) context(testimonial=item=site.testimonials[0]) -->
+
+<div class="c-testimonial-card">
+  <div class="c-testimonial-card__content">
+    <div class="c-testimonial-card__client-meta">
+      
+        <div class="c-testimonial-card__image-container">
+          <img class="c-testimonial-card__client-avatar" src="images/client-1.jpg" alt="Justin Baptista">
+        </div>
+      
+      <div class="c-testimonial-card__client-info">
+        
+          <h3 class="c-testimonial-card__client-name">Justin Baptista</h3>
+        
+        
+          <p class="c-testimonial-card__client-position">Copywriter</p>
+        
+      </div>
+    </div>
+    
+      <p class="c-testimonial-card__client-text">Quamquam id quidem, infinitum est in hac urbe, Ita multo sanguine profuso in laetitia et in victoria est mortuus. Atqui pugnantibus et contrariis studiis semper.</p>
+    
+  </div>
+</div>
+<!--bookshop-live end-->
+          
+            <!--bookshop-live name(testimonial-card/testimonial-card.jekyll.html) params(testimonial-item=testimonial-item) context(testimonial=item=site.testimonials[1]) -->
+
+<div class="c-testimonial-card">
+  <div class="c-testimonial-card__content">
+    <div class="c-testimonial-card__client-meta">
+      
+        <div class="c-testimonial-card__image-container">
+          <img class="c-testimonial-card__client-avatar" src="images/client-2.jpg" alt="Kadin Herwitz">
+        </div>
+      
+      <div class="c-testimonial-card__client-info">
+        
+          <h3 class="c-testimonial-card__client-name">Kadin Herwitz</h3>
+        
+        
+          <p class="c-testimonial-card__client-position">Traveler</p>
+        
+      </div>
+    </div>
+    
+      <p class="c-testimonial-card__client-text">Quamquam id quidem, infinitum est in hac urbe, Ita multo sanguine profuso in laetitia et in victoria est mortuus. Atqui pugnantibus et contrariis studiis semper.</p>
+    
+  </div>
+</div>
+<!--bookshop-live end-->
+          
+            <!--bookshop-live name(testimonial-card/testimonial-card.jekyll.html) params(testimonial-item=testimonial-item) context(testimonial=item=site.testimonials[2]) -->
+
+<div class="c-testimonial-card">
+  <div class="c-testimonial-card__content">
+    <div class="c-testimonial-card__client-meta">
+      
+        <div class="c-testimonial-card__image-container">
+          <img class="c-testimonial-card__client-avatar" src="images/client-4.jpg" alt="Paul Wade">
+        </div>
+      
+      <div class="c-testimonial-card__client-info">
+        
+          <h3 class="c-testimonial-card__client-name">Paul Wade</h3>
+        
+        
+          <p class="c-testimonial-card__client-position">Marketing</p>
+        
+      </div>
+    </div>
+    
+      <p class="c-testimonial-card__client-text">Quamquam id quidem, infinitum est in hac urbe, Ita multo sanguine profuso in laetitia et in victoria est mortuus. Atqui pugnantibus et contrariis studiis semper.</p>
+    
+  </div>
+</div>
+<!--bookshop-live end-->
+          
+            <!--bookshop-live name(testimonial-card/testimonial-card.jekyll.html) params(testimonial-item=testimonial-item) context(testimonial=item=site.testimonials[3]) -->
+
+<div class="c-testimonial-card">
+  <div class="c-testimonial-card__content">
+    <div class="c-testimonial-card__client-meta">
+      
+        <div class="c-testimonial-card__image-container">
+          <img class="c-testimonial-card__client-avatar" src="images/client-3.jpg" alt="Tatiana Curtis">
+        </div>
+      
+      <div class="c-testimonial-card__client-info">
+        
+          <h3 class="c-testimonial-card__client-name">Tatiana Curtis</h3>
+        
+        
+          <p class="c-testimonial-card__client-position">Art Director</p>
+        
+      </div>
+    </div>
+    
+      <p class="c-testimonial-card__client-text">Quamquam id quidem, infinitum est in hac urbe, Ita multo sanguine profuso in laetitia et in victoria est mortuus. Atqui pugnantibus et contrariis studiis semper.</p>
+    
+  </div>
+</div>
+<!--bookshop-live end-->
+          
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end testimonials -->
+<!--bookshop-live end-->
+
+    <!--bookshop-live name(blog-section/blog-section.jekyll.html) params(bind=block) context(block=content_blocks[3]) -->
+<!-- begin blog -->
+<section class="section blog">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="contaniner__inner animate">
+
+          <div class="section__info">
+            <div class="section__head">
+              <h2 class="section__title">Recent Posts</h2>
+              <a class="section__link" href="/blog">View all <i class="ion ion-md-arrow-forward"></i></a>
+            </div>
+            <div class="section__description"><p>Vonge blog features productivity, tips, inspiration and strategies for massive profits. Find out how to set up a successful blog or how to make yours even better!</p> </div>
+          </div>
+
+          
+          <div class="row">
+            
+              
+                <!--bookshop-live name(blog-card/blog-card.jekyll.html) params(post=post) context(post=site.posts[0]) -->
+
+<div class="c-blog-card col col-4 col-d-6 col-t-12">
+  <div class="c-blog-card__inner">
+
+    
+    <div class="c-blog-card__image-wrap">
+      <a class="c-blog-card__image" href="/blog/that-which-does-not-kill-us-makes-us-stronger">
+        <img loading="lazy" src="/images/post-1.jpg" alt="That which does not kill us makes us stronger">
+      </a>
+    </div>
+    
+
+    <div class="c-blog-card__content">
+
+      
+      <div class="c-blog-card__tags-box">
+        
+        <a href="/tag/travel" class="c-blog-card__tag">travel</a>
+        
+        <a href="/tag/lifestyle" class="c-blog-card__tag">lifestyle</a>
+        
+      </div>
+      
+
+      <h2 class="c-blog-card__title">
+        <a href="/blog/that-which-does-not-kill-us-makes-us-stronger">That which does not kill us makes us stronger</a>
+      </h2>
+
+      <p class="c-blog-card__excerpt">
+        Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward.
+      </p>
+
+      <div class="c-blog-card__meta">
+        <div class="c-blog-card__author-image">
+          <img loading="lazy" src="/images/avatar.jpg" alt="Vanessa Marley">
+        </div>
+        <div class="c-blog-card__info">
+          <div class="c-blog-card__author-name">Vanessa Marley</div>
+          <span class="c-blog-card__date"><time datetime="2018-11-13T07:01:35-05:00">13 Nov 2018</time></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--bookshop-live end-->
+              
+                <!--bookshop-live name(blog-card/blog-card.jekyll.html) params(post=post) context(post=site.posts[1]) -->
+
+<div class="c-blog-card col col-4 col-d-6 col-t-12">
+  <div class="c-blog-card__inner">
+
+    
+    <div class="c-blog-card__image-wrap">
+      <a class="c-blog-card__image" href="/blog/do-what-you-can-with-what-you-have-where-you-are">
+        <img loading="lazy" src="/images/post-2.jpg" alt="Do what you can, with what you have, where you are">
+      </a>
+    </div>
+    
+
+    <div class="c-blog-card__content">
+
+      
+      <div class="c-blog-card__tags-box">
+        
+        <a href="/tag/life" class="c-blog-card__tag">life</a>
+        
+        <a href="/tag/story" class="c-blog-card__tag">story</a>
+        
+      </div>
+      
+
+      <h2 class="c-blog-card__title">
+        <a href="/blog/do-what-you-can-with-what-you-have-where-you-are">Do what you can, with what you have, where you are</a>
+      </h2>
+
+      <p class="c-blog-card__excerpt">
+        Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward.
+      </p>
+
+      <div class="c-blog-card__meta">
+        <div class="c-blog-card__author-image">
+          <img loading="lazy" src="/images/avatar.jpg" alt="Vanessa Marley">
+        </div>
+        <div class="c-blog-card__info">
+          <div class="c-blog-card__author-name">Vanessa Marley</div>
+          <span class="c-blog-card__date"><time datetime="2018-11-12T07:01:35-05:00">12 Nov 2018</time></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--bookshop-live end-->
+              
+                <!--bookshop-live name(blog-card/blog-card.jekyll.html) params(post=post) context(post=site.posts[2]) -->
+
+<div class="c-blog-card col col-4 col-d-6 col-t-12">
+  <div class="c-blog-card__inner">
+
+    
+    <div class="c-blog-card__image-wrap">
+      <a class="c-blog-card__image" href="/blog/strive-not-to-be-a-success-but-rather-to-be-of-value">
+        <img loading="lazy" src="/images/post-3.jpg" alt="Strive not to be a success, but rather to be of value">
+      </a>
+    </div>
+    
+
+    <div class="c-blog-card__content">
+
+      
+      <div class="c-blog-card__tags-box">
+        
+        <a href="/tag/life" class="c-blog-card__tag">life</a>
+        
+        <a href="/tag/notes" class="c-blog-card__tag">notes</a>
+        
+      </div>
+      
+
+      <h2 class="c-blog-card__title">
+        <a href="/blog/strive-not-to-be-a-success-but-rather-to-be-of-value">Strive not to be a success, but rather to be of value</a>
+      </h2>
+
+      <p class="c-blog-card__excerpt">
+        Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward.
+      </p>
+
+      <div class="c-blog-card__meta">
+        <div class="c-blog-card__author-image">
+          <img loading="lazy" src="/images/avatar.jpg" alt="Vanessa Marley">
+        </div>
+        <div class="c-blog-card__info">
+          <div class="c-blog-card__author-name">Vanessa Marley</div>
+          <span class="c-blog-card__date"><time datetime="2018-11-11T07:01:35-05:00">11 Nov 2018</time></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--bookshop-live end-->
+              
+            
+          </div>
+          
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end blog -->
+<!--bookshop-live end-->
+
+    <!--bookshop-live name(newsletter/newsletter.jekyll.html) params(bind=block) context(block=content_blocks[4]) -->
+<!-- begin subscribe -->
+
+<section class="c-subscribe section">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+
+        <div class="c-subscribe__inner">
+          <div class="c-subscribe__info">
+            <h3 class="c-subscribe__title">Join my mailing list</h3>
+            <div class="c-subscribe__subtitle">
+              <span id="ityped"></span>
+            </div>
+          </div>
+
+          <form class="c-subscribe__form validate" action="//frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3"
+            method="POST" id="membedded-subscribe-form" name="membedded-subscribe-form" target="_blank" novalidate>
+            <label class="screen-reader-text" for="mce-EMAIL">Email address</label>
+            <input class="c-subscribe__form-email required email" id="mce-EMAIL" type="text" name="EMAIL" placeholder="Your email address">
+            <button class="c-button c-button--primary c-button--large" id="membedded-subscribe" type="submit" name="subscribe">Subscribe</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end subscribe -->
 
 <script>
-  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  var itype_text = ['Get inspiration, updates and, cool stuff!'];
 </script>
+<!--bookshop-live end-->
 
-<!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+    <!--bookshop-live name(contact-form/contact-form.jekyll.html) params(bind=block) context(block=content_blocks[5]) -->
+<!-- begin contact -->
 
-<!--[if IE]>
-  <style>
-    /* old IE unsupported flexbox fixes */
-    .greedy-nav .site-title {
-      padding-right: 3em;
-    }
-    .greedy-nav button {
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 100%;
-    }
-  </style>
-<![endif]-->
+<div class="c-contact-form" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
 
+        <div class="c-contact-form__form-box">
+          <div class="c-contact-form__contact-head">
+            <h2 class="c-contact-form__contact-title">Get in touch</h2>
+            <p class="c-contact-form__contact-description">Vonge comes with a built-in contact form.</p>
+          </div>
+          <form class="c-contact-form__form"
+            action=""
+            method="POST">
+            <input type="hidden" name="_to" value="site@example.com">
+            <div class="c-contact-form__form-group">
+              <label class="c-contact-form__form-label screen-reader-text" for="form-name">Your Name</label>
+              <input class="c-contact-form__form-input" id="form-name" type="text" name="name" placeholder="Your name..." required>
+            </div>
+            <div class="c-contact-form__form-group">
+              <label class="c-contact-form__form-label screen-reader-text" for="form-email">Your Email</label>
+              <input class="c-contact-form__form-input" id="form-email" type="email" name="_replyto" placeholder="Your email..."
+                required>
+            </div>
+            <div class="c-contact-form__form-group">
+              <label class="c-contact-form__form-label screen-reader-text" for="form-text">Your Message</label>
+              <textarea class="c-contact-form__form-input" id="form-text" name="text" rows="9" placeholder="Your message..."
+                required></textarea>
+            </div>
+            <div class="c-contact-form__form-group c-contact-form__form-group--button">
+              <button class="c-button c-button--primary c-button--large" type="submit">Send now</button>
+            </div>
+          </form>
+        </div>
 
-
-    <!-- start custom head snippets -->
-
-<!-- insert favicons. use https://realfavicongenerator.net/ -->
-
-<!-- end custom head snippets -->
-
-  </head>
-
-  <body class="layout--home wide">
-    <nav class="skip-links">
-  <h2 class="screen-reader-text">Skip links</h2>
-  <ul>
-    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
-    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
-    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
-  </ul>
-</nav>
-
-    <!--[if lt IE 9]>
-<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
-<![endif]-->
-
-    
-
-<div class="masthead">
-  <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        
-          <a class="site-logo" href="/"><img src="/assets/images/favicon.png" alt=""></a>
-        
-        <a class="site-title" href="/">
-          The Obtuse Canadian Goose
-          
-        </a>
-        <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="/about/">About</a>
-            </li><li class="masthead__menu-item">
-              <a href="/projects/">Projects</a>
-            </li></ul>
-        
-        <button class="search__toggle" type="button">
-          <span class="visually-hidden">Toggle search</span>
-          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
-            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
-          </svg>
-        </button>
-        
-        <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">Toggle menu</span>
-          <div class="navicon"></div>
-        </button>
-        <ul class="hidden-links hidden"></ul>
-      </nav>
+      </div>
     </div>
   </div>
 </div>
+<!-- end contact -->
+<!--bookshop-live end-->
 
 
-    <div class="initial-content">
-      
-
-
-
-<div id="main" role="main">
-  
-  <div class="sidebar sticky">
-  
-
-
-<div itemscope itemtype="https://schema.org/Person">
-
-  
-    <div class="author__avatar">
-      
-        <img src="/assets/images/bio-photo.jpg" alt="Liam Ogilvie" itemprop="image">
-      
-    </div>
-  
-
-  <div class="author__content">
-    
-      <h3 class="author__name" itemprop="name">Liam Ogilvie</h3>
-    
-    
-      <div class="author__bio" itemprop="description">
-        <p>Third year student at the University of Toronto studying Computer Science and Economics</p>
-
-      </div>
-    
-  </div>
-
-  <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
-      
-        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Toronto, ON</span>
-        </li>
-      
-
-      
-        
-          
-            <li><a href="https://github.com/obtusecanadiangoose" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
-          
-        
-          
-            <li><a href="https://www.instagram.com/ogilvieliam/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
-          
-        
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      <!--
-  <li>
-    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
-      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
-    </a>
-  </li>
--->
-    </ul>
-  </div>
 </div>
 
-  
-  </div>
+<!--bookshop-live end-->
 
+    <div class="top" title="Top"><i class="ion ion-ios-arrow-up"></i></div>
 
+    <!-- begin footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
 
-  <div class="archive">
+        <!--bookshop-live meta(version="3.9.0" baseurl="" title="Vonge") -->
+<!--bookshop-live name(social-link.jekyll.html) params() context() -->
+
+<div class="social">
+  <ul class="social__list list-reset">
     
-      <h1 id="page-title" class="page__title"></h1>
+    <li class="social__item">
+      <a class="social__link" href="https://twitter.com" target="_blank" rel="noopener" aria-label="twitter icon"><i class="ion ion-logo-twitter"></i></a>
+    </li>
     
-    <!--<p>Todo: Get rid of this side and build something a lot prettier</p>-->
-
-
-<h3 class="archive__subtitle">Recent Projects</h3>
-
-
-
-<!---->
-
-<div class="entries-piclist">
-  
+    <li class="social__item">
+      <a class="social__link" href="https://github.com" target="_blank" rel="noopener" aria-label="github icon"><i class="ion ion-logo-github"></i></a>
+    </li>
     
-
-
-
-<div class="piclist__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    <li class="social__item">
+      <a class="social__link" href="https://pinterest.com" target="_blank" rel="noopener" aria-label="pinterest icon"><i class="ion ion-logo-pinterest"></i></a>
+    </li>
     
-	
-      <div class="archive__item-teaser">
-        <img src="/assets/images/valorant-aimbot-header-thin.png" alt="test">
-      </div>
+    <li class="social__item">
+      <a class="social__link" href="https://youtube.com" target="_blank" rel="noopener" aria-label="youtube icon"><i class="ion ion-logo-youtube"></i></a>
+    </li>
     
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/projects/2020-11-04-valorant-aimbot/" rel="permalink">Valorant Aimbot [Proof Of Concept]
-</a>
-      
-    </h2>
-    
-
-
-    <p class="archive__item-excerpt" itemprop="description">Undetectable aimbot using opencv and a raspberrypi0
-</p>
-  </article>
-</div>
-
-<!--    
-	-->
-
-  
-    
-
-
-
-<div class="piclist__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-	
-      <div class="archive__item-teaser">
-        <img src="/assets/images/OSM-pathfinder-header-thin.png" alt="test">
-      </div>
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/projects/2021-09-23-osm-pathfinder/" rel="permalink">Open Street Maps Pathfinder
-</a>
-      
-    </h2>
-    
-
-
-    <p class="archive__item-excerpt" itemprop="description">Recursive pathfinder program using real world street data
-</p>
-  </article>
-</div>
-
-<!--    
-	-->
-
-  
-</div>
-
-
-
-
-  </div>
-</div>
-    </div>
-
-    
-      <div class="search-content">
-        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
-    <label class="sr-only" for="search">
-      Enter your search term...
-    </label>
-    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
-  </form>
-  <div id="results" class="results"></div></div>
-
-      </div>
-    
-
-    <div id="footer" class="page__footer">
-      <footer>
-        <!-- start custom footer snippets -->
-
-<!-- end custom footer snippets -->
-        <div class="page__footer-follow">
-  <ul class="social-icons">
-    
-      <li><strong>Follow:</strong></li>
-    
-
-    
-      
-        
-          <li><a href="https://twitter.com/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
-        
-      
-        
-          <li><a href="https://github.com/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
-        
-      
-        
-          <li><a href="https://instagram.com/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
-        
-      
-    
-
-    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2022 Liam Ogilvie. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>. Header icon by <a href="https://www.reddit.com/r/Baystreetbets/comments/ilird8/hi_you_guys_liked_my_beaver_how_about_a_goose/" rel="nofollow">u/DUMOyBK</a>.</div>
+<!--bookshop-live end-->
 
-      </footer>
+        <ul class="footer_nav list-reset">
+          
+          <li class="footer_nav__item">
+            <a href="/" class="footer_nav__link">Home</a>
+          </li>
+          
+          <li class="footer_nav__item">
+            <a href="/projects/" class="footer_nav__link">Projects</a>
+          </li>
+          
+          <li class="footer_nav__item">
+            <a href="/elements/" class="footer_nav__link">Elements</a>
+          </li>
+          
+          <li class="footer_nav__item">
+            <a href="/about/" class="footer_nav__link">About</a>
+          </li>
+          
+          <li class="footer_nav__item">
+            <a href="/blog/" class="footer_nav__link">Blog</a>
+          </li>
+          
+        </ul>
+
+        <div class="copyright"><p> 2021 &copy; <a href="/">Vonge</a>. Template by <a href="https://cloudcannon.com/">CloudCannon</a>.</p></div>
+
+      </div>
     </div>
+  </div>
+</footer>
+<!-- end footer -->
 
-    
-  <script src="/assets/js/main.min.js"></script>
-
-
-
-
-<script src="/assets/js/lunr/lunr.min.js"></script>
-<script src="/assets/js/lunr/lunr-store.js"></script>
-<script src="/assets/js/lunr/lunr-en.js"></script>
-
-
-
-
-
-
-
-  </body>
+    <script src="/js/scripts.js"></script>
+    <script src="/js/common.js"></script>
+</body>
 </html>
