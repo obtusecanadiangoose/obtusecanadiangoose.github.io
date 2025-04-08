@@ -1,18 +1,26 @@
 #  The contact options.
 
+- type: instagram
+  icon: "fa-brands fa-instagram"
+  url:  "https://www.instagram.com/ogilvieliam/"
+
 - type: github
   icon: "fab fa-github"
+  
+- type: soundcloud
+  icon: "fa-brands fa-soundcloud"
+  url:  "https://soundcloud.com/mythiamusicofficial"
 
-- type: twitter
-  icon: "fa-brands fa-x-twitter"
-
-- type: email
-  icon: "fas fa-envelope"
-  noblank: true # open link in current tab
-
-- type: rss
-  icon: "fas fa-rss"
-  noblank: true
+#- type: twitter
+#  icon: "fa-brands fa-x-twitter"
+#
+#- type: email
+#  icon: "fas fa-envelope"
+#  noblank: true # open link in current tab
+#
+#- type: rss
+#  icon: "fas fa-rss"
+#  noblank: true
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon
